@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notes.css">
+    <title>Cyber Security | DIT's Notes| Ganesh Rawat </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">G-DIT</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="semesters.html">Semesters</a></li>
+                <li><a href="semester-6.html">Subjects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://www.ganeshrawat.com.np" target="_blank">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+            </div>
+            <div class="search" onclick="toggleSearchPopup()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="notes-container">
+        <aside class="links-to-unit">
+            <ul>
+                <li><a href="#unit-1">1. Introduction</a></li>
+                <li><a href="#">unint 2</a></li>
+                <li><a href="#">unint 3</a></li>
+            </ul>
+        </aside>
+        <div class="main-container">
+            <div id="unit-1">
+                <h1>Unit-1: Introduction to Cyber Security</h1>
+                <div class="unit unit-1">
+                    <h2>1.1 Information System</h2>
+                    <div class="definition">
+                        An information system can be defined as a set of interrelated components that collect,
+                        manipulate, store data, distribute information to support decision making and provide a feedback
+                        mechanism to monitor performance. <br>
+                        The components that must be combined together in order to produce an information system are:
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>People: </strong>Peoples are the most essential part of the information system
+                                because without them the system cannot be operated correctly.</li>
+                            <li><strong>Hardware: </strong>It is the part of a physical component of an information
+                                system which we can touch. The information system hardware includes the computer,
+                                processors, monitors, printer, keyboards, disk drives, iPads, flash drives, etc.</li>
+                            <li><strong>Software: </strong>It is a set of instruction that tells the hardware what to
+                                do. It can be used to organize, process and analyse data in the information system.</li>
+                            <li><strong>Data: </strong>Data is a collection of facts. Information systems work with
+                                data. These data can be aggregated, indexed, and organized into tables and files
+                                together to form a database. These databases can become a powerful tool for every
+                                businesses information system.</li>
+                            <li><strong>Network: </strong>It includes internet, intranet, extranet to provide successful
+                                operations for all types of organizations and computer-based information system.</li>
+                            <li><strong>Procedures: </strong>It specifies the policies that govern the operation of an
+                                information system. It describes how specific method of data are processed and analysed
+                                to get the answers for which the information system is designed.</li>
+                            <li><strong>Feedback: </strong>It is the component of an information system which defines
+                                that an IS may be provided with feedback.</li>
+                        </ul>
+                    </div>
+                    <h2>1.2 Cyber Threats</h2>
+                    <div class="definition">Cyber threats are security incidents or circumstances with the potential to
+                        have
+                        a negative outcome for your network or other data management systems. <br>
+                        Examples of common types of security threats include phishing attacks that result in the
+                        installation of malware that infects your data, failure of a staff member to follow data
+                        protection
+                        protocols that cause a data breach, or even a tornado that takes down your company’s data
+                        headquarters, disrupting access. <br>
+                        Vulnerabilities are the gaps or weaknesses in a system that make threats possible and tempt
+                        threat
+                        actors to exploit them.
+                        Types of vulnerabilities in network security include but are not limited to SQL injections,
+                        server
+                        misconfigurations, cross-site scripting, and transmitting sensitive data in a non-encrypted
+                        plain
+                        text format.
+                    </div>
+                    <h2>Hacker Techniques</h2>
+                    <div class="definition">
+                        A hacker is an individual who uses computer, networking or other skills to gain unauthorized
+                        access to
+                        overcome a technical problem.
+                        However, the term hacker is commonly used for an individual who uses computer, networking or
+                        other
+                        skills to gain unauthorized access to systems or networks in order to commit cyber-crimes or
+                        illegal or
+                        unethical work. <br>
+                        Some hacking techniques used by hackers for their purpose are:
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Phishing:</strong><br>The hacker makes a perfect copy of a popular website and
+                                uses a URL that is closed enough to the
+                                original to go unnoticed. He then sends a legitimate-looking email to the target
+                                containing a link to
+                                the phishing site. The target will unknowingly sign in to the fake websites giving the
+                                hacker his login
+                                credentials.
+                                (Tricking users into revealing sensitive information, often through emails or messages
+                                that look
+                                legitimate.)</li>
+                            <li><strong>SQL Injections:</strong><br>Most websites use an SQL database to store
+                                information about their customers. An application
+                                communicating with that database can be exploited with SQL-injections if it's poorly
+                                coded. The attack
+                                is executed on the website's user-input fields (search box, login box, etc) that accept
+                                illegal input,
+                                giving the hacker access to the database. (Inserting malicious code into a SQL statement
+                                to gain
+                                unauthorized access to data.)</li>
+                            <li><strong>DoS/DDoS:</strong><br>In a Denial of Service attack, the hacker uses a Botnet
+                                (network of hijacked computers) to flood a
+                                specific server with massive amounts of traffic. The server is quickly overloaded, and
+                                all websites
+                                hosted on it will be offline.
+                                (Overloading a system with traffic to make it unavailable to users.)</li>
+                            <li><strong>Brute Force:</strong><br>Essentially, it's guessing password until the hacker
+                                gets it right. If a user has a weak password, i.e.
+                                “1234” or “password”, the hacker can try to guess it either by hand or using specialized
+                                tools.</li>
+                            <li><strong>Fake WAP:</strong><br>Free Wi-Fi is common in public spaces like airports and
+                                coffee shops making it an ideal target for a
+                                hacker to exploit. The hacker creates a fake wireless Access Point (WAP) mimicking the
+                                name of the real
+                                WIFI, so user connect to it. While the users is connected to the fake Wi-Fi the hacker
+                                can read all
+                                information going through it, login credentials, credit card, and personal messages.
+                            </li>
+                            <li><strong>Sniffing/Snooping:</strong><br>The hacker monitors traffic on unsecured networks
+                                to find relevant information that can be used in a
+                                future attack.</li>
+                            <li><strong>Bait & Switch:</strong><br>In this attack, the hacker buys advertising space on
+                                popular websites, and the ads will redirect the
+                                target to a page full of malware. The hacker's ads will look legitimate and very
+                                appealing to the
+                                target, but as soon as the target clicks them they will be infected. It's called Bait &
+                                Switch since the
+                                hacker's baiting with good ads and then switching the link to a bad page.</li>
+                            <li><strong>Cookie Theft:</strong><br> Most websites use cookies to store user data and make
+                                them load faster, this can be passwords, browsing
+                                history, etc. if the connections are not secured through SSL the hacker can steal this
+                                data and use the
+                                cookie to authenticate themselves as the target.</li>
+                            <li><strong>Waterhole Attacks:</strong><br>The hacker studies the target's daily routines to
+                                find out his favourite physical locations(cafe), these
+                                are the waterholes. Once the hacker knows the waterholes and the timing of the target he
+                                sets his trap
+                                using a combination of waterholes and the timing of the target he sets his trap using a
+                                combination of
+                                techniques.</li>
+                            <li><strong>UI Redress/Click-Jacking</strong><br>In essence, the hacker tricks the target to
+                                click on a specific link by making it look like something
+                                else. It's very common on movie streaming or torrent download pages, when the user
+                                clicks on “Download”
+                                or “Play”, it's an advertising link they are clicking. In other cases, it can be used to
+                                trick the
+                                target to transfer money to the hacker from their online bank.</li>
+                        </ul>
+                    </div>
+                    <h2>1.3 Cyber Crimes</h2>
+                    <div class="definition">
+                        Cybercrime is criminal activity that either targets or uses a computer, a computer network or a
+                        networked device. <br>
+                        Mostly, Cybercrime is committed by cybercriminals or hackers who want to make money or some
+                        profit.
+                        But some cybercrime such as downloading illegal music files, distributing viruses, hate crime,
+                        identity
+                        theft, etc may be non-monetary. <br>
+                        Some examples of cybercrime are:
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>Email and internet fraud.</li>
+                            <li>Identity fraud (where personal information is stolen and used).</li>
+                            <li>Theft of financial or card payment data.</li>
+                            <li>Theft and sale of corporate data.</li>
+                            <li>Cyberextortion (demanding money to prevent a threatened attack).</li>
+                            <li>Ransomware attacks (a type of cyberextortion).</li>
+                            <li>Crypto jacking (where hackers mine cryptocurrency using resources they do not own).</li>
+                            <li>Cyberespionage (where hackers access government or company data).</li>
+                        </ul>
+                    </div>
+                    <h2>1.4 Cyber Security</h2>
+                    <div class="definition">
+                        Cyber security is the application of technologies, processes and controls to protect systems,
+                        networks, programs, devices and data from cyber-attacks.
+                        It aims to reduce the risk of cyber attacks and protect against the unauthorized exploitation of
+                        systems, networks and technologies. <br>
+                        Cybersecurity has three goals:
+                    </div>
+                    <div class="list">
+                        <ol>
+                            <li><strong>Protect the confidentiality of data. </strong><br>Confidentiality is about
+                                preventing the disclosure of data to unauthorized parties.
+                                It also means trying to keep the identity of authorized parties involved in sharing and
+                                holding data
+                                private and anonymous. It is achieved using data encryption, authentication, security
+                                tokens, etc.</li>
+                            <li><strong>Preserve the integrity of data.</strong><br>Integrity refers to protecting
+                                information from being modified by unauthorized parties. It is achieved using checksums,
+                                file permission, data backup, etc.</li>
+                            <li><strong>Promote the availability of data for authorized users.</strong><br>Availability
+                                is making sure that authorized parties are able to access the information when needed.
+                                Standard measures to guarantee availability are backing up data to external drives,
+                                implementing
+                                firewalls, having backup power supplies, data redundancy, etc.</li>
+                        </ol>
+                    </div>
+                    <h3>Reasons for need of cyber security (advantages)</h3>
+                    <div class="definition">
+                        Cyber-attacks can be extremely expensive for businesses to endure.
+                        In addition to financial damage suffered by the business, a data breach can also inflict untold
+                        reputational damage.
+                    </div>
+                    <h2>Types of Cyber Security</h2>
+                    <div class="definition">We can categorize cybersecurity in the following types:</div>
+                    <div class="list">
+                        <ul>
+                            <li><strong> Network Security: </strong>It involves implementing the hardware and software
+                                to secure a computer network from unauthorized access, intruders, attacks, disruption,
+                                and misuse. This security helps an organization to protect its assets against external
+                                and internal threats.</li>
+                            <li><strong> Application Security: </strong>It involves protecting the software and devices
+                                from unwanted threats. This protection can be done by constantly updating the apps to
+                                ensure they are secure from attacks.
+                                Successful security begins in the design stage, writing source code, validation, threat
+                                modeling,
+                                etc., before a program or device is deployed.</li>
+                            <li><strong>Information or Data Security: </strong>It involves implementing a strong data
+                                storage mechanism to maintain the integrity and privacy of data, both in storage and in
+                                transit.</li>
+                            <li><strong>Identity management: </strong>It deals with the procedure for determining the
+                                level of access that each individual has within an organization.</li>
+                            <li><strong>Operational Security: </strong>It involves processing and making decisions on
+                                handling and securing data assets.</li>
+                            <li><strong>Mobile Security: </strong>It involves securing the organizational and personal
+                                data stored on mobile devices such as cell phones, computers, tablets, and other similar
+                                devices against various malicious threats. These threats are unauthorized access, device
+                                loss or theft, malware, etc.</li>
+                            <li><strong>Cloud Security: </strong>It involves in protecting the information stored in the
+                                digital environment or cloud architectures for the organization. It uses various cloud
+                                service providers such as AWS, Azure, Google, etc., to ensure security against multiple
+                                threats.</li>
+                        </ul>
+                    </div>
+                    <h2>1.5 Types of Attacks in Cyber (cyber-attacks)</h2>
+                    <div class="definition">Cyberattack is an attempt to disable, expose, alter, destroy, steal or gain
+                        unauthorized access to a computer system, infrastructure, network, or any other smart device.
+                        It uses malicious code to alter computer code, logic or data and lead to cybercrimes, such as
+                        information and identity theft. <br>
+                        Cyber-attacks can be classified into the following categories:</div>
+                    <div class="list">
+                        <ol>
+                            <li>Web-based attacks</li>
+                            <li>System-based attacks</li>
+                        </ol>
+                    </div>
+                    <h3>Web-based attacks</h3>
+                    <div class="definition">
+                        These are the attacks which occur on a website or web applications. Some of the important
+                        web-based attacks are as follows-
+                    </div>
+                    <div class="list">
+                        <ol>
+                            <li><strong>Injection attacks</strong> <br> It is the attack in which some data will be
+                                injected
+                                into a web application to manipulate the application and fetch the required information.
+                                Example- SQL Injection, code Injection, log Injection, XML Injection etc.</li>
+                            <li><strong>DNS Spoofing</strong> <br> DNS Spoofing is a type of computer security hacking.
+                                Whereby a data is introduced into a DNS resolver's cache causing the name server to
+                                return
+                                an incorrect IP address, diverting traffic to the attacker's computer or any other
+                                computer.
+                                The DNS spoofing attacks can go on for a long period of time without being detected and
+                                can
+                                cause serious security issues.</li>
+                            <li><strong>Session Hijacking</strong> <br>It is a security attack on a user session over a
+                                protected network. Web applications create cookies to store the state and user sessions.
+                                By
+                                stealing the cookies, an attacker can have access to all of the user data. </li>
+                            <li><strong>Phishing</strong> <br> Phishing is a type of attack which attempts to steal
+                                sensitive information like user login credentials and credit card number. It occurs when
+                                an
+                                attacker is masquerading as a trustworthy entity in electronic communication.</li>
+                            <li><strong>Brute force</strong> <br>It is a type of attack which uses a trial and error
+                                method.
+                                This attack generates a large number of guesses and validates them to obtain actual data
+                                like user password and personal identification number. This attack may be used by
+                                criminals
+                                to crack encrypted data, or by security analysts to test an organization's network
+                                security.
+                            </li>
+                            <li><strong>Denial of Service</strong> <br>It is an attack which meant to make a server or
+                                network resource unavailable to the users. It accomplishes this by flooding the target
+                                with
+                                traffic or sending it information that triggers a crash. It uses the single system and
+                                single internet connection to attack a server. It can be classified into the following-
+                                <br>
+                                <strong>Volume-based attacks-</strong> Its goal is to saturate the bandwidth of the
+                                attacked
+                                site, and is measured in bit per second. <br>
+                                <strong>Protocol attacks- </strong>It consumes actual server resources, and is measured
+                                in a
+                                packet.
+                                Application layer attacks- Its goal is to crash the web server and is measured in
+                                request
+                                per second. <br>
+                            </li>
+                            <li><strong>Dictionary attacks</strong> <br>This type of attack stored the list of a
+                                commonly
+                                used password and validated them to get original
+                                password. </li>
+                            <li><strong>URL Interpretation</strong> <br>It is a type of attack where we can change the
+                                certain parts of a URL, and one can make a web server to deliver web pages for which he
+                                is
+                                not authorized to browse. </li>
+                            <li><strong>File Inclusion attacks</strong> <br> It is a type of attack that allows an
+                                attacker
+                                to access unauthorized or essential files which is available on the web server or to
+                                execute
+                                malicious files on the web server by making use of the
+                                include functionality.</li>
+                            <li><strong>Man in the middle attacks</strong> <br>It is a type of attack that allows an
+                                attacker to intercepts the connection between client and server and acts as a bridge
+                                between
+                                them. Due to this, an attacker will be able to read, insert and modify the data in the
+                                intercepted connection. </li>
+                        </ol>
+                    </div>
+                    <h3>System-based attacks</h3>
+                    <div class="definition">These are the attacks which are intended to compromise a computer or a  computer network. Some of the important system-based attacks are as follows-</div>
+                    <div class="list">
+                        <ol>
+                            <li> <strong> Virus</strong> <br>It is a type of malicious software program that spread
+                                throughout the computer files without the knowledge of a user. It is a self-replicating
+                                malicious computer program which is attached to another executable program that
+                                replicates by inserting copies of itself into other computer programs when executed. It
+                                can also execute instructions that cause harm to the system. </li>
+                            <li> <strong>Worm</strong> <br>It is a type of malware whose primary function is to
+                                replicate
+                                itself to spread to uninfected computers and consume its resources. It works same as the
+                                computer virus. Worms often originate from email attachments that appear to be from
+                                trusted
+                                senders. </li>
+                            <li> <strong>Trojan horse</strong> <br>It is a malicious program that occurs unexpected
+                                changes
+                                to computer setting and unusual activity, even when the computer should be idle. It
+                                misleads
+                                the user of its true intent. It appears to be a normal but when opened/executed some
+                                malicious code will run in the background. </li>
+                            <li> <strong>Backdoors</strong> <br>It is a method that bypasses the normal authentication
+                                process. A developer may create a backdoor so that an application or operating system
+                                can be
+                                accessed for troubleshooting or other purposes. </li>
+                            <li> <strong> Bots</strong> <br>A bot (short for "robot") is an automated process that
+                                interacts
+                                with other network services. Some bots program run automatically, while others only
+                                execute
+                                commands when they receive specific input. <br> Common examples of bots program are the
+                                crawler, chatroom bots, and malicious bots. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="creators"><strong>By:</strong> <i>Subodh Neupane, Ganesh Rawat</i> </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We're dedicated to providing high-quality study materials for students worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="semesters.html">Semesters</a></li>
+                    <li><a href="semesters.html">Subjects</a></li>
+                    <li><a href="htttps://www.ganeshrawat.com.np" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=100058741285541" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/@GANESHRAWATZ" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/ganeshrawat05/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/ganeshr369" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2024 G-DIT | Allrights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

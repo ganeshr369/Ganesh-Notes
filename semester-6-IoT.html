@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notes.css">
+    <title>Internet of Things | DIT's Notes| Ganesh Rawat </title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">G-DIT</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="semesters.html">Semesters</a></li>
+                <li><a href="semester-6.html">Subjects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://www.ganeshrawat.com.np" target="_blank">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+            </div>
+            <div class="search" onclick="toggleSearchPopup()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="notes-container">
+        <aside class="links-to-unit">
+            <ul>
+                <li><a href="#unit-1">1. Introduction</a></li>
+                <li><a href="#">unint 2</a></li>
+                <li><a href="#">unint 3</a></li>
+            </ul>
+        </aside>
+        <div class="main-container">
+            <div id="unit-1">
+                <h1>Unit-1: Introduction </h1>
+                <div class="unit unit-1">
+                    <h2> 1.1. Definition</h2>
+                    <div class="definition">
+                        The Internet of Things (IoT) is a network of physical objects, or "smart objects", that are
+                        embedded with sensors, software, and other technologies to allow them to connect and exchange
+                        data with other devices and systems over the internet. <br>
+                        IoT devices can include phones, appliances, thermostats, lighting systems, security cameras,
+                        vehicles.
+                        Today, smart watches track exercise and steps, smart speakers add items to shopping lists and
+                        switch lights on and off, and transponders allow cars to pass through tollbooths. <br>
+                        The IoT simplifies and automates tasks that are complicated and sometimes beyond the scope of
+                        human capabilities.
+                        IoT devices can communicate with each other and with other internet-enabled devices, and can
+                        sense or interact with their internal states or the external environment. IoT can enable
+                        seamless communication between people, processes, and things, and can provide sensor information
+                        and improve quality control. It can also lead to automation, which can improve the quality of
+                        service, reduce waste and labor costs, and simplify decision-making. <br>
+                        However, IoT also presents some challenges, such as data security and equipment safety.
+                        Sensitive personal details of a user might be compromised when the devices are connected to the
+                        internet, and equipment in the huge IoT network may also be at risk.
+                    </div>
+                    <h2>1.2. History of IoT</h2>
+                    <div class="definition">
+                        Although examples of interconnected electronic devices exist as far back as the early 19th
+                        century, with the invention of the telegraph and its ability to transmit information by coded
+                        signal over distance, the origins of the IoT date to the late 1960s. It was then that a group of
+                        prominent researchers began exploring ways to connect computers and systems. A prime example of
+                        this work was ARPANET, the network created by the Advanced Research Projects Agency (ARPA) of
+                        the U.S. Defense Department; this network was a forerunner of today's Internet. In the late
+                        1970s businesses, governments, and consumers began exploring ways to connect personal computers
+                        (PCs) and other machines to one another. By the 1980s local area networks (LANs) provided an
+                        effective and widely used way to communicate and share documents, data, and other information
+                        across a group of PCs in real time. <br>
+                        By the mid-1990s the Internet extended those capabilities globally, and researchers and
+                        technologists began exploring ways that humans and machines could better connect. In 1997
+                        British technologist Kevin Ashton, cofounder of the Auto-ID Center at MIT, began exploring a
+                        technology framework, radio-frequency identification (RFID), that would allow physical devices
+                        to connect via microchips and wireless signals, and it was in a speech in 1999 that Ashton
+                        coined the phrase “the Internet of Things.” Within a few years' smartphones, cloud computing,
+                        advancements in processing power, and improved software algorithms had created a framework for
+                        collecting, storing, processing, and sharing data in a more robust way. At the same time,
+                        sophisticated sensors appeared that could measure motion, temperature, moisture levels, wind
+                        direction, sound, light, images, vibrations, and numerous other conditions—along with the
+                        ability to pinpoint a person or a device through geolocation. These developments made possible
+                        the ability to communicate with both digital devices and physical objects in real time. For
+                        example, by adding a tracking chip, such as an Apple AirTag to an object such as a wallet or
+                        suitcase, it is possible to view its location. The same chip built into a digital device can
+                        track its whereabouts if lost or stolen. Then, with the widespread adoption of mobile devices
+                        such as smartphones and tablets and the introduction of pervasive wireless connectivity, it was
+                        possible to connect people and things in a near ubiquitous way. As a result, smart traffic
+                        networks, connected storage tanks, and industrial robotics systems became the norm. <br>
+                        The IoT continues to evolve. Today it supports an array of use cases, including artificial
+                        intelligence used for ultrasophisticated simulations, sensing systems that detect pollutants in
+                        water supplies, and systems that monitor farm animals and crops. For example, it is now possible
+                        to track the location and health of animals and to apply remotely optimal levels of water,
+                        fertilizer, and pesticides to crops. <br>
+                        Highly connected systems allow shipping companies and airlines to factor in weather and
+                        mechanical problems and then optimize fleets for maximum loads and efficiencies. The IoT
+                        provides motorists with real-time maps and navigation suggestions that route and reroute them
+                        based on current traffic patterns. These systems reduce congestion and pollution and save time
+                        and money.
+                    </div>
+                    <h2>1.3. IoT Architecture</h2>
+                    <div class="definition">
+                        The architecture of IoT is divided into 4 different layers i.e. Sensing Layer, Network Layer,
+                        Data processing Layer, and Application Layer.
+                    </div>
+                    <div class="img-sec">
+                        <img src="" alt="">
+                        <div class="img-name">Figure: 4 Stages of IoT Architecture </div>
+                    </div>
+                    <div class="definition">
+                        <strong>Sensing Layer: </strong>The sensing layer is the first layer of the Internet of Things
+                        architecture and is responsible for collecting data from different sources. This layer includes
+                        sensors and actuators that are placed in the environment to gather information about
+                        temperature, humidity, light, sound, and other physical parameters. Wired or wireless
+                        communication protocols connect these devices to the network layer.
+                    </div>
+                    <div class="definition"><strong>Network Layer: </strong>The network layer of an IoT architecture is
+                        responsible for providing communication and connectivity between devices in the IoT system. It
+                        includes protocols and technologies that enable devices to connect and communicate with each
+                        other and with the wider internet. Examples of network technologies that are commonly used in
+                        IoT include WiFi, Bluetooth, Zigbee, and cellular networks such as 4G and 5G technology.
+                        Additionally, the network layer may include gateways and routers that act as intermediaries
+                        between devices and the wider internet, and may also include security features such as
+                        encryption and authentication to protect against unauthorized access.</div>
+                    <div class="definition"><strong>Data processing Layer: </strong>The data processing layer of IoT
+                        architecture refers to the software and hardware components that are responsible for collecting,
+                        analyzing, and interpreting data from IoT devices. This layer is responsible for receiving raw
+                        data from the devices, processing it, and making it available for further analysis or action.
+                        The data processing layer includes a variety of technologies and tools, such as data management
+                        systems, analytics platforms, and machine learning algorithms. These tools are used to extract
+                        meaningful insights from the data and make decisions based on that data. Example of a technology
+                        used in the data processing layer is a data lake, which is a centralized repository for storing
+                        raw data from IoT devices. </div>
+                    <div class="definition"><strong>Application Layer: </strong>The application layer of IoT
+                        architecture is the topmost layer that interacts directly with the end-user. It is responsible
+                        for providing user-friendly interfaces and functionalities that enable users to access and
+                        control IoT devices. This layer includes various software and applications such as mobile apps,
+                        web portals, and other user interfaces that are designed to interact with the underlying IoT
+                        infrastructure. The application layer also includes analytics and processing capabilities that
+                        allow data to be analyzed and transformed into meaningful insights. This can include machine
+                        learning algorithms, data visualization tools, and other advanced analytics capabilities.</div>
+
+                    <h2> 1.4. IoT Frameworks</h2>
+                    <div class="definition">An IoT framework can be defined as a set of protocols, tools, and standards
+                        that provide a specific structure for developing and deploying IoT applications and services.
+                        <br>
+                        The framework of IoT typically includes a combination of the following:
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>Hardware</li>
+                            <li>Software</li>
+                            <li>Networking elements (IoT protocols)</li>
+                            <li>Device management</li>
+                            <li>Security</li>
+                            <li>Data management</li>
+                            <li>Application development</li>
+                            <li>Cloud-based platform.</li>
+                        </ul>
+                    </div>
+                    <div class="definition">
+                        These components work together to enable the seamless integration of IoT devices (what is IoT)
+                        and systems. For example, the device management is necessary for updating and monitoring the
+                        performance of the device. Protocols allow the different connections between devices and the
+                        internet. <br>
+                        There needs to be a cloud platform where data will be processed and stored, this also connects
+                        with an application or platform that is in charge of displaying the data and allows other
+                        functions or services.
+                    </div>
+                    <h3> Types of IoT frameworks</h3>
+                    <div class="definition">
+                        There are IoT frameworks that are open source, and others that are proprietary. IoT framework
+                        open source doesn't mean that it is free, many people get confused with this concept. We have
+                        even talked about IoT open source devices. <br>
+                        Open source frameworks are useful because they provide access to the code of the platform in
+                        order to make any modifications as needed and build the IoT application with more freedom.
+                        Finally, proprietary frameworks are IoT frameworks that don't grant access to the source code,
+                        they have an already established platform from which IoT product design and development
+                        consultants can start working. <br>
+                    </div>
+                    <h4>Proprietary IoT frameworks</h4>
+                    <div class="definition">AWS IoT, Azure IoT, IBM Watson IoT, KAA IoT, and Google IoT Core.</div>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>AWS IoT:</strong>One of the most popular solutions by Amazon. It not only
+                                contains the cloud side to accelerate the release time of the solution, but also offers
+                                frameworks in the device side, like a flavor of FreeRTOS an Operative System. This OS is
+                                widely used in microcontrollers and their flavor makes it very easy to connect to their
+                                cloud.</li>
+                            <li><strong>Azure IoT: </strong>The solution used by many corporations. It shares many of
+                                the elements of AWS, and also competes having additional resources for the devices like
+                                their Azure RTOS.</li>
+                            <li><strong>IBM Watson IoT: </strong>The alternative from IBM, more friendly for teams
+                                already used to their applications.</li>
+                            <li><strong>KAA IoT: </strong>With an open source version that is now deprecated, KAA
+                                evolved into an enterprise and paid solution for IoT devices, and free trials to test it
+                                before purchasing.</li>
+                        </ul>
+                    </div>
+                    <h4>Open-source IoT frameworks</h4>
+                    <div class="definition">ThingsBoard, OpenHab, DeviceHive, Mainflux, and Eclipse IoT.</div>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>ThingsBoard: </strong>A solution that goes from data acquisition to
+                                visualization, alarms and messaging. It has an open source version, as well as a
+                                professional one (non open source) with more features.</li>
+                            <li><strong>OpenHab: </strong>A framework specifically for home automation, with different
+                                options to integrate, either cloud or in your own home using something like a raspberry
+                                pi.</li>
+                            <li><strong>DeviceHive: </strong>A free solution you can deploy on your own servers to get
+                                started, and connect applications like grafana to visualize the data. You can also sign
+                                into their playground to see the capabilities before deeploying it yourself.</li>
+                            <li><strong>Mainflux:</strong> Written mainly on GO (the programming language) is also
+                                deployable on your own server, with no additional cost.</li>
+                            <li><strong>Eclipse IoT: </strong>Rather than the classical platform where you can connect a
+                                device and watch the information on a dashboard, it is a set of open source tools that
+                                can be used in many parts of the IoT data chain (the device, the gateway, the cloud
+                                itself).</li>
+                        </ul>
+                    </div>
+                    <div class="question"> What is the difference between IoT framework and IoT architecture?</div>
+                    <div class="answer"> IoT architecture and IoT framework are related but distinct concepts in the
+                        field of the Internet of Things. <br>
+                        In short, IoT architecture defines the overall design and structure of an IoT system, while an
+                        IoT framework provides the fundamentals for developing and deploying IoT applications and
+                        services.
+                        In other words, the IoT architecture is the blueprint for a whole IoT system, on the other hand,
+                        the framework IoT is the set of tools that helps to build said system.</div>
+                    <h2>1.5. Benefits of IoT</h2>
+                    <div class="definition">The IoT makes things around us more capable and responsive by connecting the
+                        physical and digital worlds. IoT offers several benefits in our daily lives. Following are some
+                        of its benefits:</div>
+                    <div class="list">
+                        <ol>
+                            <li><strong> Easy Access </strong> <br> We may simply get the necessary information right
+                                away, in real time, from wherever you are. All you need is an internet connection and a
+                                smart device.</li>
+                            <li><strong>Quick operation </strong> <br> We can finish many tasks very quickly because of
+                                the inflow of data. For instance, IoT makes automation simple. Additionally, smart
+                                businesses can automate routine tasks to free up workers' time and energy. </li>
+                            <li><strong> Monitoring Data </strong> <br>When we discuss IoT advantages and disadvantages,
+                                tracking is its major benefit. Keeping track of product expiration dates also increases
+                                your safety. </li>
+                            <li><strong>Following New Standards </strong> <br>IoT is an area that is constantly
+                                evolving, although compared to other high-tech fields, its changes are rather small.
+                                However, it may be difficult for you to stay up to date on everything if IoT doesn't
+                                exist. </li>
+                            <li><strong>Better Time Management </strong> <br>Overall, IoT is a smart time-saving
+                                technique. This is another benefit of IoT on the list of advantages and disadvantages of
+                                IoT. You can do almost everything from the palm of your hand, including checking the
+                                most recent news during your daily commute. Thus, you ultimately get a lot more time for
+                                yourself. </li>
+                            <li><strong>Automation and Control </strong> <br>There is a huge deal of automation and
+                                control in the operations in working environments. This is because physical things can
+                                connect and are set digitally and centrally via wireless technology. Moreover, the
+                                machines communicate with one another to produce work more quickly and on schedule.
+                                Additionally, it all works without human intervention. </li>
+                            <li><strong>Cost Saving </strong> <br>Saving money is another key benefit of IoT in the
+                                debate on the advantages and disadvantages of IoT. The IoT is suitable for many people
+                                as the cost of tagging and monitoring devices is less. IoT mostly assists in making
+                                people's daily lives easier by enabling efficient device communication. Thus, it helps
+                                people save money and energy. </li>
+                            <li><strong> </strong> <br> </li>
+                        </ol>
+                    </div>
+                    <h3>Disadvantages of IoT</h3>
+                    <div class="list r-list">
+                        <ol type="i">
+                            <li><strong>Dependency on Technology </strong><br>The internet connection is the key
+                                requirement for IoT. So, it is useless if the Internet is absent.
+                                Therefore, our dependency on IoT usage in daily life is also growing. Even the most
+                                irrelevant
+                                information might irritate us if we can't immediately get what we want. Our ability to
+                                focus is
+                                significantly decreasing as a result of IoT. </li>
+                            <li><strong>Loss of Data </strong><br>It is good to have access to data but it is a demerit
+                                in the list of Internet of Things advantages
+                                and disadvantages. Your personal information is, unfortunately, more widely known. Data
+                                breaches can
+                                be stressful. If a client's information goes missing, businesses worry about them and
+                                risk losing
+                                their clients' trust. </li>
+                            <li><strong>Operation Complexity </strong><br>While IoT may appear to manage tasks easily,
+                                many complex actions are going on in the background.
+                                The remaining steps of the process will be wrong results if the program accidentally
+                                performs an
+                                improper computation. So, it also explains why an error in the IoT is difficult to
+                                debug. </li>
+                            <li><strong>Inter Compatibility </strong><br>Many times, equipment from different
+                                manufacturers connects. But, the issue of tag and monitoring
+                                compatibility gets deeper in such scenarios. The solution to this drawback is for the
+                                manufacturers
+                                to create a shared standard. But there is a chance that the technical issues could still
+                                exist. So,
+                                it is also a drawback in talks regarding the advantages and disadvantages of IoT. </li>
+                            <li><strong>Less Employment of Low-Educated Workers </strong><br>The automation of daily
+                                tasks may result in the loss of employment for non-educated workers. Thus,
+                                it will result in society-wide unemployment. Any technology can cause this problem, but
+                                one can
+                                overcome it through education. So, as daily tasks become more automated, there will be
+                                less need for
+                                human labor. This will be tough for laborers and less-educated staff. </li>
+                            <li><strong>More Control of Technology </strong><br>Technology will increasingly have an
+                                impact on how we live our lives. The younger generation already
+                                relies on technology to complete even the smallest tasks. So, we must decide how much of
+                                our daily
+                                lives we are ready to automate and reduce to technological control. </li>
+                            <li><strong>Security </strong><br>A lot of information is available on the Internet as it
+                                connects to all household appliances,
+                                industrial equipment, and public sector services. Thus, hackers can attack this data to
+                                get private
+                                information and the results would be terrible. This is a leading drawback when you
+                                search for the
+                                advantages and disadvantages of IoT. Try to keep the drawbacks under control now that
+                                you are more
+                                aware of them. </li>
+                        </ol>
+                    </div>
+                    <h2> 1.6. Application of IoT</h2>
+                    <div class="list">
+                        <ol type="a">
+                            <li><strong>Healthcare </strong><br> IoT can help monitor patients' health by scanning ID
+                                cards to generate patient histories, treatment,
+                                and other health-related details.</li>
+                            <li><strong>Industrial IoT </strong><br>IoT can be applied to large industrial systems,
+                                machines, factories, and processes. </li>
+                            <li><strong>Smart cities </strong><br>IoT can help make city management more efficient and
+                                effective. </li>
+                            <li><strong>Smart homes </strong><br>IoT allows users to remotely monitor and control
+                                devices and objects in their homes by connecting
+                                them to the internet. </li>
+                            <li><strong>Supply chain management </strong><br>IoT can help monitor, analyze, and manage
+                                the food sector in real time, and improve the routing of
+                                food products. </li>
+                            <li><strong> Transportation </strong><br>IoT sensors can be used in intelligent transport
+                                systems for people and goods, such as trains,
+                                planes, ships, and vehicles. These systems can help increase engine performance, manage
+                                supply
+                                chains, and handle logistics and security. </li>
+                            <li><strong>Traffic management </strong><br>IoT can collect data about traffic patterns and
+                                congestion to help improve traffic flow and reduce
+                                congestion. </li>
+                            <li><strong> Fleet management </strong><br>Sensors located in lorries and ships can help
+                                fleet managers calculate their speeds. </li>
+                            <li><strong> Hospitality: </strong><br>IoT can help automate processes, improve the guest
+                                experience, and save money on
+                                energy costs and maintenance. </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="creators"><strong>By:</strong> <i> Ganesh Rawat</i> </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We're dedicated to providing high-quality study materials for students worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="semesters.html">Semesters</a></li>
+                    <li><a href="semesters.html">Subjects</a></li>
+                    <li><a href="htttps://www.ganeshrawat.com.np" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/profile.php?id=100058741285541" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/@GANESHRAWATZ" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/ganeshrawat05/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/ganeshr369" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2024 G-DIT | Allrights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
