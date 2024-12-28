@@ -97,7 +97,12 @@
 
 .main-container .r-list  {
     border-left: 4px solid #ff4c4c;
-    background-color: #fff6f6;
+    background-color: #fff5f5;
+}
+
+.main-container .n-list  {
+    border-left: none;
+    background-color: #fff;
 }
 
 .main-container .question {
@@ -117,6 +122,10 @@
 
 .unit li {
     margin-bottom: 6px;
+}
+
+.unit {
+    margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
