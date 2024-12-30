@@ -45,7 +45,8 @@
                 <li><a href="#unit-2">Fundamental Mechanisms & Technologies</a></li>
                 <li><a href="#unit-3">IoT Protocols</a></li>
                 <li><a href="#unit-4">IoT with RASPBERRY PI </a></li>
-                <li><a href="#unit-5"></a></li>
+                <li><a href="#unit-5">IoT Privacy, Security & Governance</a> </li>
+                <li><a href="#unit-6">...</a> </li>
             </ul>
         </aside>
         <div class="main-container">
@@ -1698,6 +1699,197 @@
                              <span class="keyword">finally</span>:
                                 GPIO.<span class="keyword">cleanup</span>()	  <span class="comment"># Reset GPIO settings</span>
                         </pre>
+                    </div>
+                </div>
+            </div>
+            <div id="unit-5">
+                <h1>Unit 5. IoT Privacy, Security & Governance</h1>
+                <div class="unit unit-5">
+                    <h2>5.1 Vulnerabilities of IoT</h2>
+                    <div class="definition">The following are the some vulnerabilities of IoT:</div>
+                    <div class="list">
+                        <ol>
+                            <li><strong>Weak or hardcoded passwords:  </strong>Many IoT devices come with default or easily guessable passwords, making them vulnerable to exploitation by attackers.</li>
+                            <li><strong>Lack of device management:  </strong>Inadequate device management and configuration can lead to vulnerabilities, allowing attackers to gain unauthorized access.</li>
+                            <li><strong>Insecure firmware and software:  </strong>Firmware and software updates are often neglected or delayed, leaving devices vulnerable to known exploits.</li>
+                            <li><strong>Unpatched vulnerabilities:  </strong>IoT devices often lack timely and effective patching mechanisms, making them susceptible to attacks.</li>
+                            <li><strong>Default settings:  </strong>Many devices ship with insecure default settings, allowing attackers to exploit them without needing to guess or crack passwords.</li>
+                            <li><strong>Hidden backdoors:  </strong>Some devices may contain hidden backdoors or hardcoded credentials, providing unauthorized access to attackers.</li>
+                            <li><strong>Unsecured interfaces:  </strong>Interfaces surrounding IoT devices, such as web interfaces, backend APIs, cloud services, or mobile apps, can be vulnerable to attacks if not properly secured.</li>
+                            <li><strong>Unmonitored and unmanaged devices:  </strong>Many IoT devices are not properly monitored or managed, making it difficult to detect and respond to security incidents.</li>
+                            <li><strong>Supply chain vulnerabilities:  </strong>IoT devices may be vulnerable to attacks through compromised supply chains, allowing attackers to inject malicious code or components.</li>
+                            <li><strong>Lack of security awareness: </strong>Users and organizations may lack awareness of IoT security risks, making them more susceptible to attacks.</li>
+                        </ol>
+                    </div>
+                    
+                    <h2>5.2 Security Requirements</h2>
+                    <div class="definition"><strong> 1. Device Authentication </strong> <br>To prevent unauthorized devices from accessing the IoT network or interacting with other devices - IoT devices must have secure methods for verifying their identity when connecting to networks and other devices. Examples: Using digital certificates, strong passwords, biometrics, or hardware-based authentication.</div>
+                    <div class="definition"><strong>2. Data Encryption </strong> <br>To prevents attackers from eavesdropping on communications or modifying data during transmission - Data transmitted between IoT devices and systems must be encrypted to protect it from being intercepted and tampered with. Examples: TLS (Transport Layer Security), AES (Advanced Encryption Standard), and SSL (Secure Sockets Layer).</div>
+                    <div class="definition"><strong>3. Access Control </strong> <br>Using limits access to sensitive data and functionalities to prevent unauthorized manipulation - IoT systems should enforce strict access control policies to ensure that only authorized users and devices can access or modify data and functionalities. Examples: Role-based access control (RBAC), multi-factor authentication (MFA), and privilege management.</div>
+                    <div class="definition"><strong> 4. Secure Firmware Updates </strong> <br>To prevents attackers from exploiting known vulnerabilities in outdated firmware - IoT devices must have the ability to securely update their firmware to patch vulnerabilities and enhance functionality.Examples: Over-the-air (OTA) updates with integrity checks, cryptographic verification of updates.</div>
+                    <div class="definition"><strong>5. Physical Security </strong> <br>To prevents attackers from directly accessing or altering the hardware to gain control or extract sensitive information - IoT devices must be protected against physical tampering, especially if deployed in public or insecure environments. Examples: Tamper-resistant designs, hardware security modules (HSM), and secure boot.</div>
+                    <div class="definition"><strong>6. Data Integrity </strong> <br>To ensures that data is not altered or corrupted during transmission or storage - Mechanisms must be in place to ensure the integrity of data transmitted and stored by IoT devices. Examples: Hashing algorithms (e.g., SHA-256), cryptographic signatures, checksums.</div>
+                    <div class="definition"><strong>7. Device Confidentiality </strong> <br>To prevents exposure of sensitive data, such as personal information, device configurations, and cryptographic keys - Sensitive information stored on or transmitted by IoT devices must remain confidential. Examples: Data encryption at rest and in transit, secure key storage, data anonymization.</div>
+                    <div class="definition"><strong>8. Security Monitoring and Logging </strong> <br>To identify suspicious activity and enables quick response to breaches - IoT devices and networks should have logging and monitoring capabilities to detect and respond to security incidents in real-time. Examples: Intrusion detection systems (IDS), activity logs, and anomaly detection.</div> 
+                    
+                    <h2>5.3 Threat Analysis</h2>
+                    <div class="definition">IoT threat analysis is the process of identifying, evaluating, and prioritizing potential threats that can target IoT devices, networks, and ecosystems. This analysis is essential to understanding the vulnerabilities in IoT systems and developing security strategies to mitigate these risks.</div>
+                    <h3>Common IoT security threats include</h3>
+                    <div class="list zer4x">
+                        <ul>
+                            <li><strong>Data Theft:  </strong>Unauthorized access to sensitive data stored on or transmitted by IoT devices.</li>
+                            <li><strong>Ransomware Attacks:  </strong>Malware that encrypts firmware or data, demanding payment for decryption keys.</li>
+                            <li><strong>Supply Chain Attacks:  </strong>Malicious software or hardware inserted during the manufacturing or distribution process.</li>
+                            <li><strong>Insecure Communication:  </strong>Unencrypted or vulnerable communication protocols used for device-to-device or device-to-cloud communication.</li>
+                            <li><strong>Vulnerabilities in Open-Source Firmware:  </strong>Unpatched vulnerabilities in open-source firmware used in IoT devices.</li>
+                        </ul>
+                    </div>
+                    <h4>Threat Analysis Methodologies</h4>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>Vulnerability Assessment and Penetration Testing (VAPT): </strong>Identifying and exploiting vulnerabilities in IoT devices and systems.</li>
+                            <li><strong>Threat Modeling: </strong>Analyzing potential attack scenarios and identifying vulnerabilities based on the IoT system’s architecture and components.</li>
+                            <li><strong>Artificial Neural Network (ANN) Intrusion Detection Systems: </strong>Using machine learning algorithms to detect and classify IoT network traffic anomalies indicative of threats.  </li>
+                        </ul>
+                    </div>
+                    <h4>    Best Practices</h4>
+                    <div class="definition">To mitigate IoT security threats, consider the following best practices:</div>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Implement Strong Authentication:  </strong>Use secure authentication mechanisms for IoT devices and networks.</li>
+                            <li><strong>Regularly Update Firmware:  </strong>Ensure timely updates for IoT devices and firmware to patch vulnerabilities.</li>
+                            <li><strong>Monitor Network Traffic:  </strong>Implement network traffic analysis and intrusion detection systems to detect anomalies.</li>
+                            <li><strong>Secure Communication:  </strong>Use encryption and secure communication protocols for device-to-device and device-to-cloud communication.</li>
+                            <li><strong>Supply Chain Security:  </strong>Implement robust supply chain security measures to prevent malicious software or hardware insertion.</li>
+                            <li><strong>Threat Intelligence:  </strong>Stay informed about emerging IoT security threats and trends to inform threat analysis and mitigation strategies.</li>
+                        </ul>
+                    </div>
+                    <h2>5.4 Use Cases and Misuse Cases</h2>
+                    <div class="definition">Here are some examples of IoT use cases:</div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Smart Operations:  </strong>IoT initiatives in smart operations are the most adopted, enabling real-time monitoring and automation of industrial processes, leading to increased efficiency and reduced costs.</li>
+                            <li><strong>Supply Chain Management:  </strong>IoT use cases in smart supply chain management optimize logistics, track inventory, and monitor transportation, resulting in improved delivery times and reduced stockouts.</li>
+                            <li><strong>Process Automation:  </strong>IoT-enabled process automation is the #1 adopted IoT use case, automating industrial processes, and improving quality, reducing waste, and increasing productivity.</li>
+                            <li><strong>Fitness and Health Tracking:  </strong>IoT devices, such as fitness trackers and smartwatches, monitor individuals' health and fitness, providing valuable insights for personalized wellness and disease prevention.</li>
+                            <li><strong>Smart Homes:  </strong>IoT devices, like Amazon Alexa and Google Home, integrate with various appliances and systems, enabling voice-controlled automation, energy efficiency, and enhanced convenience.</li>
+                        </ul>
+                    </div>
+                    <h4 style="color: #ff4c4c;">Misuse Cases in IoT</h4>
+                    <div class="definition">Misuse cases in IoT highlight potential system behaviors that stakeholders consider unacceptable or insecure. Here are some examples:</div>
+                    <div class="list r-list e3xr55"> 
+                        <ul>
+                            <li><strong>Unauthorized Data Access:  </strong>A misuse case might involve an attacker gaining unauthorized access to IoT device data, compromising sensitive information and potentially leading to security breaches.</li>
+                            <li><strong>Device Hacking:  </strong>A misuse case could involve an attacker exploiting vulnerabilities in IoT devices, disrupting their normal functioning or using them for malicious purposes.</li>
+                            <li><strong>Data Tampering:  </strong>A misuse case might involve an attacker modifying or deleting IoT device data, compromising its integrity and accuracy.</li>
+                            <li><strong>DoS:  </strong>A misuse case could involve an attacker overwhelming IoT devices with traffic, causing them to become unavailable or unresponsive.</li>
+                            <li><strong>Unsecured Data Transmission: </strong>A misuse case might involve an attacker intercepting and stealing IoT device data during transmission, compromising its confidentiality and integrity. </li>
+                        </ul>
+                    </div> 
+                    <h2>5.5 IoT security Tomography and layered attacker model</h2>
+                    <div class="definition">IoT security tomography refers to the process of analyzing and visualizing the security posture of an IoT system, much like medical tomography visualizes internal structures of the human body. This involves identifying vulnerabilities, threats, and potential attack paths across multiple layers of an IoT system.</div>
+                    <h3>Security Tomography in IoT is Mainly of Three Types</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong> Security Tomography:  </strong>IoT security tomography refers to the process of creating a detailed and accurate map of an IoT system's security vulnerabilities by analyzing and measuring its various components and communication channels. The goal of IoT security tomography is to identify and address potential security risks in an IoT system for protection against cyber-attacks and data breaches.</li>
+                            <li><strong>Computational Tomography:  </strong>IoT computational tomography refers to the use of computational methods to infer (to form an opinion from evidence)  the internal state or structure of a connected device or network of devices. The goal of IoT computational tomography is to provide visibility into the internal workings of IoT devices and networks and to help identify and mitigate potential issues.</li>
+                            <li><strong>Network Tomography:  </strong>IoT network tomography refers to the use of network measurements to infer the internal state or structure of a connected device or network of devices. The goal of IoT network tomography is to provide visibility into the internal workings of IoT devices and networks and to help identify and mitigate potential issues. </li>
+                        </ul>
+                    </div>
+                   
+                    <h3>Layered Attacker Model</h3>                    
+                    <div class="definition">The layered attacker model is a framework for understanding and mitigating attacks on IoT systems. It consists of multiple layers, each with its own set of vulnerabilities and attack vectors:</div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Perception Layer:  </strong>Sensors and actuators, which collect and transmit data. Vulnerabilities include eavesdropping, tampering, and spoofing.</li>
+                            <li><strong>Network Layer:  </strong>Communication protocols and networks, such as Wi-Fi, Bluetooth, or cellular. Vulnerabilities include denial-of-service (DoS) attacks, man-in-the-middle (MitM) attacks, and packet sniffing.</li>
+                            <li><strong>Application Layer:  </strong>Software applications and services, such as data processing and analytics. Vulnerabilities include buffer overflows, SQL injection, and cross-site scripting (XSS).</li>
+                            <li><strong>Support Layer:  </strong>System and device management, including firmware updates and configuration. Vulnerabilities include unauthorized access, privilege escalation, and supply chain attacks.</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>5.6 Identity Establishment</h2>
+                    <div class="definition">Identity establishment refers to the process of verifying and authenticating the identity of IoT devices, ensuring secure communication, and protecting data integrity. This is crucial in preventing unauthorized access, man-in-the-middle attacks, and data breaches.</div>
+                    <h3>Key Challenges</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Unique Identifiers: </strong>Traditional authentication systems were designed for human identities, whereas IoT devices use unique identifiers (UIDs) or MAC addresses, which can be easily spoofed or replicated.</li>
+                            <li><strong>Scalability: </strong>The massive number of IoT devices requires efficient and scalable identity management solutions.</li>
+                            <li><strong>Heterogeneity: </strong> IoT devices from various manufacturers and with different communication protocols require a flexible and adaptable identity establishment approach.</li>
+                        </ul>
+                    </div>
+                    
+                    <h2> 5.7 Access control</h2>
+                    <div class="definition">Access control in IoT refers to the mechanisms and policies that regulate the interaction between devices, users, and data in an Internet of Things (IoT) ecosystem. It ensures that only authorized devices and users can access and manipulate sensitive information, preventing unauthorized access, data breaches, and malicious activities.</div>
+                    <h3>Best Practices</h3>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Implement Attribute-Based Access Control:  </strong>Use ABAC to regulate access based on device and user attributes.</li>
+                            <li><strong>Use Standardized Protocols:  </strong>Adopt standardized protocols, such as MQTT and OAuth-IoT, to ensure interoperability and scalability.</li>
+                            <li><strong>Integrate with Edge Computing:  </strong>Leverage edge computing and fog computing architectures to enable fast and secure access control decisions.</li>
+                            <li><strong>Monitor and Analyze:  </strong>Continuously monitor and analyze access control logs to detect and respond to potential security threats.</li>
+                        </ul>
+                    </div>
+                    <div class="definition">By implementing these best practices and addressing the challenges and solutions outlined above, IoT systems can ensure robust and scalable access control, protecting sensitive data and preventing unauthorized access.</div>
+                    
+                    <h2> 5.8 Message integrity</h2>
+                    <div class="definition">Message integrity in IoT refers to the assurance that data transmitted between devices or systems has not been tampered with, modified, or corrupted during its wireless transmission. This is crucial in IoT applications where data accuracy and completeness are essential for decision-making, control, and safety.</div>
+                    <h4>Challenges</h4>
+                    <div class="list n-list er3xt">
+                        <ul>
+                            <li>Wireless Transmission Errors</li>
+                            <li>Noise and Interference</li>
+                        </ul>
+                    </div> 
+                    <h4>Solutions</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Hash Functions</li>
+                            <li>Error-Correcting Codes</li>
+                            <li>Secure Key Exchange</li>
+                        </ul>
+                    </div>
+                    
+                    <h2>5.9 Non- repudiation and Availability</h2>
+                    <div class="definition"><strong>Non-Repudiation</strong> <br>Non-repudiation provides proof of the origin, authenticity, and integrity of data. It ensures that a sender cannot deny having sent a particular message, and a recipient cannot deny having received it. This is achieved through digital signatures, cryptographic hash functions, and other techniques that provide evidence of a message's existence and contents. Non-repudiation is crucial in legal and commercial contexts, where it helps resolve disputes and ensures the validity of contracts and agreements. </div>
+                    <div class="definition"><strong>Availability</strong><br>Availability refers to the ability of a system or network to provide access to data and services when needed. It ensures that data is readily accessible, and communication channels remain open, even in the presence of faults or failures. Availability is critical in ensuring business continuity, as it enables organizations to maintain operations and respond to changing circumstances.</div>
+                    
+                    <h2>5.10 Security model for IoT</h2>
+                    <div class="definition">The bellow are the some important security model for Internet of Things:</div>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Layered Architecture:  </strong>A layered architecture is essential for IoT security, spanning from the connectivity layer to the application layer. This approach enables the implementation of security measures at each level, providing a robust defense against threats.</li>
+                            <li><strong>End-to-End Solution:  </strong>An end-to-end solution ensures security is implemented at all points, from end devices to the network and cloud. This includes:
+                            <ol style="margin-top: 5px;">
+                                <li><strong>Device Security: </strong>Assigning identities to devices, authenticating them, and encrypting communication using Transport Layer Security (TLS) or IPSec.</li>
+                                <li><strong>Network Security: </strong>Implementing secure protocols, such as TLS, and ensuring secure communication between devices and gateways.</li>
+                                <li><strong>Cloud Security: </strong>Using cloud-based services, like Azure IoT Hub, with built-in security features, such as encryption and access control.</li>
+                            </ol></li>
+                            <li><strong>Threat Modeling:  </strong>A threat modeling process is crucial for identifying potential threats and designing appropriate mitigations. This involves:
+                            <ol style="margin-top: 5px;">
+                                <li><strong>Dividing IoT Architecture into Zones: </strong>Segmenting the architecture into zones, such as the device zone, field gateway zone, and cloud zone, to facilitate threat modeling and mitigation.</li>
+                                <li><strong>Identifying Threats: </strong>Understanding how attackers might compromise the system and implementing defenses accordingly.</li>
+                            </ol></li>
+                            <li><strong>Zero-Trust Model:  </strong>Adopting a zero-trust model, where all users and devices are verified, authorized, and continually evaluated for security configuration and posture, can help mitigate security threats against IoT devices.</li>
+                            <li><strong>Proposed Security Enabled Model (SEM):  </strong>The SEM, as described in the research paper, consists of:
+                            <ol style="margin-top: 5px;">
+                                <li><strong>Object Identification: </strong>Physically or network-based identification of objects.</li>
+                                <li><strong>Sensor Network Security: </strong>Securing sensor networks with encryption and access control.</li>
+                                <li><strong>Lightweight Devices: </strong>Implementing security measures on lightweight devices, such as microcontrollers.</li>
+                                <li><strong>Object Compromise: </strong>Detecting and preventing object compromise.</li>
+                                <li><strong>Network Security: </strong>Implementing TLS connections and secure communication protocols.</li>
+                                <li><strong>Storage Security: </strong>Encrypting data stored on devices and in the cloud.</li>
+                            </ol></li>
+                        </ul>
+                    </div>
+                    <h3>Best Practices</h3>
+                    <div class="list d4ku9z">
+                        <ul>
+                            <li>Use Strong Access Control</li>
+                            <li>Encrypt Data</li>
+                            <li>Use Secure Protocols</li>
+                            <li>Regularly Update and Patch</li>
+                        </ul>
                     </div>
                 </div>
             </div>
