@@ -43,7 +43,9 @@
             <ul>
                 <li><a href="#unit-1">Introduction</a></li>
                 <li><a href="#unit-2">Fundamental Mechanisms & Technologies</a></li>
-                <li><a href="#">unint 3</a></li>
+                <li><a href="#unit-3">IoT Protocols</a></li>
+                <li><a href="#unit-4">IoT with RASPBERRY PI </a></li>
+                <li><a href="#unit-5"></a></li>
             </ul>
         </aside>
         <div class="main-container">
@@ -643,12 +645,12 @@
                             <li>Difficulty in ensuring semantic interoperability, where devices understand the meaning
                                 of exchanged data</li>
                         </ul>
-                    </div> 
+                    </div>
                     <h2>2.7 Security and Privacy</h2>
                     <div class="definition">The rapid growth of IoT devices has raised significant concerns about their
                         security and privacy. With billions of devices connected to the internet, the potential attack
                         surface is vast, and the risk of data breaches and unauthorized access is high.</div>
-                    <h3 style="color: #ff4c4c;;"> Vulnerabilities</h3> 
+                    <h3 style="color: #ff4c4c;;"> Vulnerabilities</h3>
                     <div class="list r-list">
                         <ul>
                             <li><strong>Lack of security by design: </strong>Many IoT devices are designed without
@@ -970,6 +972,732 @@
                             <li> <strong>Mining: </strong>Satellite IoT can connect remote mining areas with limited or
                                 no public cellular network coverage.</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="unit-3">
+                <h1>Unit 3. IoT Protocols</h1>
+                <div class="unit unit-3">
+                    <div class="definition">IoT protocols are a set of standards and rules that facilitate information
+                        exchange and Machine-to-Machine (M2M) communication between devices in an IoT network. They
+                        ensure that devices can understand each other and exchange data efficiently, securely, and
+                        reliably.</div>
+                    <h4>Classification of IoT Protocols</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Data Link Layer Protocols</li>
+                            <li>Transport Layer Protocols</li>
+                            <li>Internet Layer Protocols</li>
+                            <li>Network Access and Physical Layer Protocols</li>
+                        </ul>
+                    </div>
+                    <h4>Popular IoT Protocols</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li>MQTT (Message Queuing Telemetry Transport)</li>
+                            <li>CoAP (Constrained Application Protocol)</li>
+                            <li>LoRaWAN</li>
+                            <li>HTTP/HTTPS</li>
+                            <li>AMQP (Advanced Message Queuing Protocol)</li>
+                        </ul>
+                    </div>
+                    <h4>Key Characteristics of IoT Protocols</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Low Power Consumption</li>
+                            <li>Low Bandwidth</li>
+                            <li>Security</li>
+                            <li>Scalability</li>
+                            <li>Flexibility</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.1 Protocol Standardization for IoT</h2>
+                    <div class="definition"> Protocol standardization for IoT refers to the process of establishing
+                        common, universally accepted communication protocols and data formats for devices and systems to
+                        exchange information seamlessly across different networks, applications, and industries. This
+                        ensures interoperability, allowing devices from various manufacturers to communicate with each
+                        other, and with cloud-based services, without vendor lock-in or proprietary limitations.</div>
+                    <h3>Importance of Standardization</h3>
+                    <div class="definition">In the IoT, protocol standardization is crucial for ensuring
+                        interoperability, scalability, and security. Without standardized protocols, devices from
+                        different manufacturers may not be able to communicate with each other, hindering the widespread
+                        adoption of IoT technologies.</div>
+                    <h3>Key IoT Protocols</h3>
+                    <div class="list">
+                        <ul>
+                            <li><strong>CoAP (Constrained Application Protocol): </strong>Designed for constrained
+                                networks and devices, CoAP enables low-power, low-bandwidth communication and is
+                                suitable for M2M applications.</li>
+                            <li><strong>AMQP (Advanced Message Queuing Protocol): </strong>An open standard for
+                                message-oriented middleware, AMQP provides reliable messaging and is used for IoT
+                                applications requiring high-quality data transmission.</li>
+                            <li><strong>MQTT (Message Queuing Telemetry Transport): </strong>A lightweight,
+                                publish-subscribe-based messaging protocol, MQTT is widely used for IoT and industrial
+                                IoT devices due to its low bandwidth and power consumption requirements.</li>
+                            <li><strong>DDS (Data Distribution Service): </strong>A middleware protocol and API standard
+                                for data-centric connectivity, DDS provides low-latency data connectivity and is
+                                suitable for real-time systems and mission-critical IoT applications.</li>
+                            <li><strong>LoRaWAN: </strong>A wireless communication protocol designed for low-power,
+                                long-range applications, LoRaWAN enables bidirectional communication, end-to-end
+                                security, localization, and mobility services.</li>
+                        </ul>
+                    </div>
+                    <h2>3.2 Efforts</h2>
+                    <div class="definition"> Efforts refer to the collaborative work by various organizations, industry
+                        groups, and researchers to develop, standardize, and improve communication protocols that enable
+                        the smooth functioning of IoT systems. These efforts are crucial because IoT devices are
+                        diverse, often use different communication methods, and operate under various conditions.
+                        Standardized protocols ensure interoperability, security, and scalability, which are essential
+                        for the widespread adoption and success of IoT technologies. <br>
+                        Here's a summary of the efforts made in developing and refining these protocols:</div>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>Interoperability: </strong>One of the primary challenges in IoT is ensuring
+                                seamless communication among devices from different manufacturers, using distinct
+                                protocols and standards. Efforts focus on developing common standards, such as CoAP
+                                (Constrained Application Protocol) and MQTT (Message Queuing Telemetry Transport), to
+                                facilitate machine-to-machine (M2M) communication.</li>
+                            <li><strong>Low-Power Wide-Area Networks (LPWANs): </strong>LPWANs, like LoRaWAN and Sigfox,
+                                are designed for low-power, low-bandwidth applications. They enable devices to transmit
+                                small amounts of data over long distances, making them suitable for IoT use cases like
+                                smart metering and industrial automation.</li>
+                            <li><strong>5G and Cellular IoT: </strong>The introduction of 5G and cellular IoT protocols,
+                                such as NB-IoT (Narrowband IoT) and LTE-M (Long-Term Evolution for Machines), provides a
+                                more reliable and secure connection for IoT devices. These protocols offer lower power
+                                consumption, wider coverage, and faster data rates compared to traditional 2G and 3G
+                                networks.</li>
+                            <li><strong>Security: </strong>As IoT devices generate vast amounts of sensitive data,
+                                security has become a top priority. Efforts focus on developing robust security
+                                protocols, such as encryption and authentication mechanisms, to protect devices and data
+                                from unauthorized access and cyber threats.</li>
+                            <li><strong>Data Representation and Device Management: </strong>Protocols like MQTT and CoAP
+                                lack defined data representation and device management structures. To address this,
+                                initiatives like the Nabto Platform and device management standards (e.g., OMA DM) aim
+                                to provide a unified approach to data exchange and device control.</li>
+                        </ul>
+                    </div>
+                    <h2>3.3 M2M and WSN Protocols</h2>
+                    <div class="definition">M2M protocols enable direct communication between devices, machines, or
+                        sensors without human intervention. They are designed for low-power, low-bandwidth, and
+                        low-latency communication, often using wireless technologies. Key characteristics of M2M
+                        protocols include:</div>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Low-overhead</li>
+                            <li>Simple</li>
+                            <li>Device-centric</li>
+                        </ul>
+                    </div>
+                    <h4>Some popular M2M protocols</h4>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>MQTT: </strong>A lightweight, publish-subscribe-based messaging protocol.</li>
+                            <li><strong>CoAP: </strong>A specialized web transfer protocol designed for constrained
+                                networks and devices.</li>
+                            <li><strong>OMA LWM2M: </strong>A protocol for device management and communication,
+                                developed by the Open Mobile Alliance (OMA).</li>
+                        </ul>
+                    </div>
+                    <div class="definition">WSN protocols enable communication between sensor nodes and a central
+                        gateway or sink node in a wireless sensor network. Key characteristics of WSN protocols include:
+                    </div>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Energy efficiency</li>
+                            <li>Scalability</li>
+                            <li>Fault tolerance</li>
+                        </ul>
+                    </div>
+                    <h4>Some popular WSN protocols</h4>
+                    <div class="list">
+                        <ul>
+                            <li><strong>IE0EE 802.15.4: </strong>A standard for low-rate wireless personal area networks
+                                (LR-WPANs), used in many WSN applications, including industrial automation and smart
+                                home.</li>
+                            <li><strong>Zigbee: </strong>A proprietary protocol based on IEEE 802.15.4, widely used in
+                                home automation, industrial automation, and IoT applications.</li>
+                            <li><strong>TinyOS: </strong>An open-source operating system and protocol suite for WSNs,
+                                designed for low-power, low-memory devices.</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.4 SCADA and FRID Protocols</h2>
+                    <div class="definition">SCADA systems are used to monitor and control industrial processes, such as
+                        power grids, water treatment plants, and manufacturing facilities, remotely. SCADA protocols
+                        enable communication between the central control unit and remote devices, ensuring secure and
+                        reliable data transmission. Commonly used SCADA protocols include:</div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Modbus: </strong>A widely adopted protocol for industrial automation, Modbus is
+                                used for serial communication between devices.</li>
+                            <li><strong>DNP3: </strong>Designed for utility applications, DNP3 is a protocol for
+                                transmitting data between SCADA master stations and remote terminal units (RTUs).</li>
+                            <li><strong>OPC: </strong>A protocol for industrial automation, OPC enables communication
+                                between devices and software applications.</li>
+                        </ul>
+                    </div>
+                    <div class="definition"><strong>RFID protocols </strong>define how tags and readers communicate with
+                        each other, transmitting data wirelessly. Commonly used RFID protocols include:</div>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>EPCglobal: </strong>A standardized protocol for RFID applications, EPCglobal
+                                defines how tags and readers communicate.</li>
+                            <li><strong>ISO/IEC 18000: </strong>An international standard for RFID protocols, ISO/IEC
+                                18000 defines the technical specifications for RFID systems.</li>
+                        </ul>
+                    </div>
+
+                    <H2>3.5 Unified Data Standards - Protocols</H2>
+                    <div class="definition">Unified data standards protocols refer to the sets of rules, guidelines, and
+                        specifications that enable different systems, applications, and devices to communicate and
+                        exchange data seamlessly. These protocols ensure that data is represented, exchanged, and
+                        processed consistently across various platforms, networks, and organizations.</div>
+                    <h3>Key Characteristics</h3>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Interoperability: </strong>Unified data standards protocols facilitate
+                                communication between heterogeneous systems, allowing data to be shared and integrated
+                                effortlessly.</li>
+                            <li><strong>Consistency: </strong>Standardized data formats, syntax, and semantics ensure
+                                that data is represented consistently, reducing errors and misinterpretations.</li>
+                            <li><strong>Security: </strong>Many protocols incorporate security measures, such as
+                                encryption, authentication, and access controls, to protect data confidentiality,
+                                integrity, and authenticity.</li>
+                            <li><strong>Flexibility: </strong>Unified data standards protocols often provide flexibility
+                                in terms of data exchange rates, protocols, and formats, accommodating various use cases
+                                and applications.</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.6 IEEE 802.15.4</h2>
+                    <div class="definition">
+                        IEEE 802.15.4 is a technical standard that defines the operation of Low-Rate Wireless Personal
+                        Area Networks (LR-WPANs). It specifies the physical layer (PHY) and media access control (MAC)
+                        for LR-WPANs, enabling low-power, low-data-rate wireless communication between devices.
+                    </div>
+                    <h3>Key Characteristics</h3>
+                    <div class="list">
+                        <ul>
+                            <li><i>Data Rate: </i>Up to 250 kbps</li>
+                            <li><i>Range: </i>Up to 10 meters (33 feet)</li>
+                            <li><i>Power Consumption: </i>Very low, designed for battery-powered devices with extended
+                                battery life</li>
+                            <li><i>Frequency Bands: </i>Operates on various frequencies, including 2.4 GHz, 915 MHz, and
+                                868 MHz (dependent on regional regulations)</li>
+                            <li><i>Topology: </i>Supports star, peer-to-peer, and mesh network topologies</li>
+                        </ul>
+                    </div>
+                    <h4>Applications</h4>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>Industrial Automation: </strong>Monitoring and control of industrial equipment,
+                                sensors, and actuators</li>
+                            <li><strong>Smart Energy: </strong>Metering, monitoring, and control of energy consumption
+                                and generation</li>
+                            <li><strong>Healthcare: </strong>Remote patient monitoring, telemedicine, and medical device
+                                communication</li>
+                            <li><strong>Home Automation: </strong>Control and monitoring of home appliances, lighting,
+                                and security systems</li>
+                            <li><strong>Environmental Monitoring: </strong>Tracking of temperature, humidity, and other
+                                environmental parameters</li>
+                        </ul>
+                    </div>
+                    <h4>Variants and Extensions</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>ZigBee: </strong>A popular implementation of IEEE 802.15.4, used in various
+                                applications, including home automation and industrial control</li>
+                            <li><strong>6LoWPAN: </strong>A low-power wireless personal area network (LPWAN) technology
+                                that uses IEEE 802.15.4 as its physical layer</li>
+                            <li><strong>WirelessHART: </strong>A wireless industrial automation protocol that builds
+                                upon IEEE 802.15.4</li>
+                            <li><strong>Thread: </strong>A low-power, low-data-rate wireless mesh network technology
+                                that uses IEEE 802.15.4 as its physical layer</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.7 BACNet Protocol</h2>
+                    <div class="definition">BACnet (Building Automation and Control Network) is a data communication
+                        protocol used in building automation systems (BAS) to control the exchange of information
+                        between different devices and components. Developed by the American Society of Heating,
+                        Refrigerating, and Air-Conditioning Engineers (ASHRAE) in 1987, BACnet is a widely adopted
+                        standard for building automation and control systems.</div>
+                    <h3>Key Features</h3>
+                    <div class="list">
+                        <ul>
+                            <li>BACnet is an open standard, allowing devices from different manufacturers to communicate
+                                with each other seamlessly.</li>
+                            <li>BACnet uses a client-server architecture, where devices typically act as servers and
+                                clients request data or services.</li>
+                            <li>BACnet/IP uses the User Datagram Protocol (UDP) for data transmission.</li>
+                            <li>BACnet focuses on devices rather than applications, ensuring interoperability between
+                                devices from various manufacturers.</li>
+                            <li>BACnet uses an object-oriented approach, representing devices and their functions as
+                                objects with unique identifiers.</li>
+                        </ul>
+                    </div>
+
+                    <h3> Services</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Device discovery and identification.</li>
+                            <li>Device self-identification.</li>
+                            <li>Requesting device information from another device.</li>
+                            <li>Providing device information to another device.</li>
+                            <li>Requesting device data (e.g., temperature, pressure).</li>
+                            <li>Updating device data (e.g., setting a temperature setpoint).</li>
+                        </ul>
+                    </div>
+                    <h3>Data Model</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Devices: </strong>Represented as objects with unique identifiers.</li>
+                            <li><strong>Objects: </strong>Representing device functions (e.g., temperature sensor,
+                                valve).</li>
+                            <li><strong>Properties: </strong>Attributes of objects (e.g., temperature value, setpoint).
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Physical Layers</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>MS/TP (Master-Slave/Token Passing): </strong>A token-passing protocol used for
+                                serial connections.</li>
+                            <li><strong>Ethernet: </strong>Using standard Ethernet protocols (TCP/IP).</li>
+                            <li><strong>IP (Internet Protocol): </strong>Using UDP/IP for IP networks.</li>
+                            <li><strong>Zigbee: </strong>A wireless mesh network protocol.</li>
+                        </ul>
+                    </div>
+                    <h4>Applications</h4>
+                    <div class="list">
+                        <ol type="a">
+                            <li>HVAC (Heating, Ventilation, and Air Conditioning) control.</li>
+                            <li>Lighting control.</li>
+                            <li>Access control.</li>
+                            <li>Fire detection and suppression.</li>
+                            <li>Elevator control.</li>
+                        </ol>
+                    </div>
+
+                    <h2> 3.8 Modbus</h2>
+                    <div class="definition"> Modbus is a widely used, open-standard, serial communication protocol for
+                        industrial electronic devices, particularly in industrial automation and control systems. It was
+                        originally developed by Modicon (now Schneider Electric) in 1979 and has since become a de facto
+                        standard for communication between devices in industrial settings.</div>
+                    <h3> Key Features</h3>
+                    <div class="list a9axw">
+                        <ul>
+                            <li>Modbus follows a client-server model, where a master device (client) initiates
+                                transactions to request data or perform actions on slave devices (servers).</li>
+                            <li>Modbus enables one-to-many communication, allowing a single master device to communicate
+                                with multiple slave devices.</li>
+                            <liModbus was initially designed for serial communication over wires, using protocols such
+                                as RS-232, RS-485, or TTL. Later, it was adapted for TCP/IP and UDP networks.>
+                            </liModbus>
+                            <li>Modbus has a simple protocol structure, making it easy to implement and maintain. Its
+                                robustness ensures reliable data transfer and error detection.</li>
+                            <li>Modbus is an open standard, allowing any manufacturer to develop devices that comply
+                                with the specification, promoting interoperability and reducing vendor lock-in.</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.9 Zigbee Architecture</h2>
+                    <div class="definition">The Zigbee architecture is a layered protocol stack that enables low-power,
+                        low-data-rate wireless communication for IoT devices. It is based on the IEEE 802.15.4 standard
+                        and consists of six layers:</div>
+                    <div class="list">
+                        <ol>
+                            <li> <strong>Physical Layer (PHY): </strong>Defines the radio frequency (RF)
+                                characteristics, such as output power, number of channels, and transmission rate. Most
+                                Zigbee applications operate on the 2.4 GHz Industrial, Scientific, and Medical (ISM)
+                                band at a 250-kbps data rate.</li>
+                            <li> <strong>Medium Access Control (MAC) Layer: </strong>Responsible for managing access to
+                                the wireless medium, including channel access, collision avoidance, and link quality
+                                measurement.</li>
+                            <li> <strong>Network Layer: </strong>Enables mesh networking, routing, and addressing. It
+                                defines the network topology and manages device relationships.</li>
+                            <li> <strong>Data Link Layer: </strong>Provides error detection and correction, as well as
+                                flow control and segmentation/reassembly of data.</li>
+                            <li> <strong>Application Layer: </strong>Supports various applications, including device
+                                management, data collection, and control. It defines the interface between the Zigbee
+                                stack and the application software.</li>
+                            <li> <strong>Zigbee Device Object (ZDO): </strong>A software component that implements the
+                                Zigbee protocol and provides a standardized interface for applications to interact with
+                                the device. </li>
+                        </ol>
+                    </div>
+
+                    <h2>3.10 Network Layer</h2>
+                    <div class="definition">The network layer is a crucial component in IoT architecture, responsible
+                        for transmitting and processing sensor data. It sits between the Physical/Device Layer and the
+                        Application Layer, facilitating communication between devices and the internet or other
+                        networks.</div>
+                    <h4>Key Functions</h4>
+                    <div class="list w-list">
+                        <ul>
+                            <li><strong>Addressing: </strong>Assigns unique addresses to IoT devices, enabling
+                                identification and routing of data packets.</li>
+                            <li><strong>Routing: </strong>Directs data packets between devices and networks, ensuring
+                                efficient data transmission.</li>
+                            <li><strong>Packetization: </strong>Breaks down data from the transport layer into smaller
+                                packets, encapsulating them for transmission over the network.</li>
+                            <li><strong>Error Handling: </strong>Detects and corrects errors that may occur during data
+                                transmission.</li>
+                        </ul>
+                    </div>
+                    <h4>IoT Network Layer Protocols</h4>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>IPv4: </strong>Although still widely used, IPv4 has a limited address space,
+                                making it inadequate for the vast number of IoT devices. However, it is still used in
+                                many IoT applications.</li>
+                            <li><strong>IPv6: </strong>The newer standard, designed to accommodate the scalability needs
+                                of IoT applications. IPv6 provides a much larger address space, enabling addressing of
+                                billions of devices.</li>
+                            <li><strong>LPWAN (Low-Power Wide-Area Network) protocols: </strong></li>
+                            <li><strong> </strong>Designed for public networks, these protocols, such as LoRaWAN,
+                                provide low-power consumption and wide coverage, making them suitable for IoT
+                                applications.</li>
+                        </ul>
+                    </div>
+                    <h2>3.11 LowPAN</h2>
+                    <div class="definition">6LoWPAN (IPv6 over Low-power Wireless Personal Area Networks) is a standard
+                        protocol for enabling IPv6 communication on wireless networks composed of low-power wireless
+                        modules. It is designed to bring the benefits of standard IP networking to low-power mesh and
+                        sensor networks, which often used proprietary technologies.</div>
+                    <h3>Key Features</h3>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Low-power and low-data-rate: </strong>6LoWPAN is optimized for devices with
+                                limited processing power and memory, making it suitable for battery-powered IoT devices.
+                            </li>
+                            <li><strong>IPv6 support: </strong>6LoWPAN allows devices to communicate using IPv6,
+                                enabling them to integrate seamlessly with existing IP-based infrastructure.</li>
+                            <li><strong>Mesh networking: </strong>6LoWPAN supports mesh networking, enabling devices to
+                                relay data packets to each other, creating a robust and fault-tolerant network.</li>
+                            <li><strong>Security: </strong>6LoWPAN provides secure communication through
+                                standard-compliant implementations of IPsec and IKEv2, ensuring end-to-end encryption
+                                and authentication.</li>
+                            <li><strong>Packet compression: </strong>6LoWPAN specification includes packet compression
+                                mechanisms to optimize data transmission and reduce energy consumption.</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.12 CoAP</h2>
+                    <div class="definition">The Constrained Application Protocol (CoAP) is a specialized web transfer
+                        protocol designed for use with constrained nodes and constrained networks in the Internet of
+                        Things (IoT). CoAP is intended for devices with limited resources, such as memory, processing
+                        power, and energy, commonly found in IoT devices.</div>
+                    <h3>Key Features</h3>
+                    <div class="list">
+                        <ul>
+                            <li>CoAP is designed to be lightweight and efficient, making it suitable for devices with
+                                limited resources.</li>
+                            <li>CoAP is a RESTful protocol, allowing for simple and intuitive interactions between
+                                devices and servers.</li>
+                            <li>CoAP supports both unicast and multicast communication, enabling efficient communication
+                                with multiple devices.</li>
+                            <li>CoAP has a low overhead, making it suitable for networks with limited bandwidth and high
+                                packet error rates.</li>
+                            <li>CoAP includes basic security features, such as message integrity and authentication, to
+                                ensure secure communication.</li>
+                        </ul>
+                    </div>
+
+                    <h2>3.13 Security</h2>
+                    <div class="definition">IoT security refers to the practice of protecting Internet of Things (IoT)
+                        devices and networks from unauthorized access, use, disclosure, disruption, modification, or
+                        destruction. Given the vast number of IoT devices and their diverse communication protocols,
+                        securing IoT requires a multifaceted approach.</div>
+                    <h3>Key Security Concerns</h3>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Data Encryption: </strong>Protecting data transmitted between devices and to the
+                                cloud using secure protocols like TLS (Transport Layer Security) and mTLS (Mutual
+                                Transport Layer Security).</li>
+                            <li><strong>Authentication: </strong>Verifying the identity of devices, users, and networks
+                                to prevent unauthorized access. Techniques include password authentication, public key
+                                infrastructure (PKI), and biometric authentication.</li>
+                            <li><strong>Authorization: </strong>Controlling access to devices, data, and services based
+                                on user roles and permissions.</li>
+                            <li><strong>Network Segmentation: </strong>Isolating IoT devices and networks from the
+                                internet and other sensitive areas to limit attack surfaces.</li>
+                            <li><strong>Firmware Security: </strong>Ensuring the integrity and authenticity of IoT
+                                device firmware updates and protecting against tampering or exploitation.</li>
+                            <li><strong>Device Profiling: </strong>Monitoring and analyzing device behavior to detect
+                                anomalies and potential security threats.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="unit-4">
+                <h1>Unit 4. IoT with RASPBERRY PI </h1>
+                <div class="unit unit-4">
+                    <div class="definition">The <a href="https://opensource.com/resources/raspberry-pi ">Raspberry
+                            Pi</a> is a series of small, affordable, and highly capable single-board computers. It was
+                        initially developed in the UK by the Raspberry Pi Foundation to promote the teaching of basic
+                        computer science in schools. <br>
+                        Raspberry Pi boards are used in a wide range of applications, from learning programming skills
+                        and building hardware projects, to home automation, industrial automation, and IoT explorations.
+                        They run on Linux and have GPIO pins for controlling electronic components, making them
+                        versatile tools for both beginners and experts in the field of computing and electronics.</div>
+
+                    <h2>4.1 Building IoT with RASPBERRY PI</h2>
+                    <div class="definition">Building an Internet of Things (IoT) project with a Raspberry Pi is a
+                        powerful and accessible way to create smart devices that can collect, process, and share data.
+                        Thanks to the Raspberry Pi's flexibility, we can connect various sensors and devices to the
+                        internet to monitor and control different environments. <br>
+                        Building an IoT project with a Raspberry Pi involves several steps. Here's a brief overview:
+                    </div>
+                    <div class="list n-list">
+                        <ol>
+                            <li><strong>Select your Raspberry Pi board: </strong>There are various models available,
+                                such as the Raspberry Pi 4, Pi 3, or Pi Zero. Choose one that suits your project
+                                requirements.</li>
+                            <li><strong>Prepare your hardware: </strong>Gather necessary components, like a power
+                                supply, microSD card, and input/output devices (sensors, LEDs, motors, etc.).</li>
+                            <li><strong>Set up the Raspberry Pi: </strong>Install an operating system (like Raspberry Pi
+                                OS) on the microSD card, insert it into the Pi, and connect it to a monitor, keyboard,
+                                and mouse.</li>
+                            <li><strong>Configure your Raspberry Pi: </strong>Update the system software, enable SSH,
+                                and configure any necessary settings.</li>
+                            <li><strong>Connect your Raspberry Pi to the internet: </strong>Ensure your Pi has a stable
+                                internet connection for IoT projects.</li>
+                            <li><strong>Programming: </strong>Learn a programming language (Python is popular for
+                                Raspberry Pi) and write code to interact with your input/output devices.</li>
+                            <li><strong>Networking: </strong>Use MQTT protocol or other IoT communication protocols to
+                                connect your Raspberry Pi to the internet and other devices.</li>
+                            <li><strong>Secure your device: </strong>Implement security measures to protect your device
+                                and data from unauthorized access.</li>
+                            <li><strong>Document and share: </strong>Document your project and share your knowledge with
+                                others in the IoT and Raspberry Pi communities.</li>
+                        </ol>
+                    </div>
+
+                    <h2>4.2 IoT System</h2>
+                    <div class="definition"> An IoT system is a network of interconnected physical devices, vehicles,
+                        buildings, and other objects that are embedded with sensors, software, and other technologies to
+                        collect and exchange data over the internet. <br>IoT systems typically consist of four main
+                        components: </div>
+                    <div class="list">
+                        <ol>
+                            <li><strong>Sensors/Devices: </strong>These are the 'things' in IoT, such as smartphones,
+                                smart home devices, industrial equipment, or wearables. They collect data from their
+                                environment.</li>
+                            <li><strong>Connectivity: </strong>IoT devices communicate with other devices, gateways, or
+                                the cloud through various communication protocols, such as Wi-Fi, Bluetooth, LoRaWAN,
+                                Zigbee, or cellular networks.</li>
+                            <li><strong>Data Processing: </strong>Data collected by IoT devices is processed, analyzed,
+                                and stored either on-device, on a local gateway, or in the cloud. This process can
+                                involve data cleaning, aggregation, and applying machine learning algorithms.</li>
+                            <li><strong>User Interface/User Experience (UI/UX): </strong>IoT systems provide a user
+                                interface, such as a mobile app or web portal, to visualize, analyze, and manage the
+                                data and devices. Users can monitor, control, and receive notifications from their IoT
+                                devices.</li>
+                        </ol>
+                    </div>
+                    <div class="definition">IoT systems can bring numerous benefits, such as increased automation,
+                        efficiency, and convenience, but they also pose challenges related to security, privacy, and
+                        interoperability. It's essential to consider these factors when designing and implementing IoT
+                        systems.</div>
+
+                    <h2>4.3 Logical Design using Python</h2>
+                    <div class="definition">In the context of IoT with Raspberry Pi, logical design using Python
+                        involves planning the software architecture and writing Python code to orchestrate the
+                        interactions between the Raspberry Pi, sensors, and other devices.
+                        Here's a brief outline:</div>
+                    <div class="list n-list">
+                        <ol type="i">
+                            <li><strong>Define the problem and objectives: </strong>Clearly outline the problem you want
+                                to solve or the functionality you want to achieve with your IoT project.</li>
+                            <li><strong>Design the software architecture: </strong>Plan the flow of data, the components
+                                involved, and their interactions. This may include defining functions, classes, and
+                                modules.</li>
+                            <li><strong>Choose appropriate Python libraries: </strong>Select suitable libraries for your
+                                project, such as RPi.GPIO for controlling GPIO pins, smbus for I2C communication,
+                                paho-mqtt for MQTT messaging, or numpy and pandas for data processing.</li>
+                            <li><strong>Write the Python code: </strong>Implement your software architecture using
+                                Python. This may involve setting up the Raspberry Pi, reading sensor data, processing
+                                the data, and sending/receiving messages.</li>
+                            <li><strong>Test the code: </strong>Verify that your code works as expected and handle any
+                                errors or exceptions.</li>
+                            <li><strong>Iterate and improve: </strong>Based on testing and user feedback, refine your
+                                code and design to enhance functionality and user experience.</li>
+                            <li> Remember, logical design using Python for IoT projects with Raspberry Pi requires a
+                                solid understanding of Python programming, IoT concepts, and the Raspberry Pi platform.
+                                Always follow best practices for coding, security, and privacy.</li>
+                        </ol>
+                    </div>
+
+                    <h2> 4.4 IoT Physical Devices & Endpoints</h2>
+                    <div class="definition">IoT physical devices and endpoints are objects connected to the Internet
+                        that can send and receive data. These devices can be any object with unique identifiers and the
+                        ability to interact with the physical environment. They are equipped with sensors, actuators,
+                        communication modules, and analysis and processing capabilities.</div>
+                    <h3>Key Components</h3>
+                    <div class="list">
+                        <ul>
+                            <li><strong>Sensing: </strong>IoT devices can be equipped with various types of sensors that
+                                collect data about themselves or their surroundings. Examples include temperature,
+                                humidity, motion, and light sensors.</li>
+                            <li><strong>Actuation: </strong>IoT devices can have actuators attached that allow them to
+                                take actions upon the physical environment. Examples include motors, relays, and
+                                solenoids.</li>
+                            <li><strong>Communication: </strong>Communication modules enable IoT devices to send
+                                collected data to other devices or cloud-based servers/storage and receive data from
+                                other devices and commands from remote applications.</li>
+                            <li><strong>Analysis & Processing: </strong>Analysis and processing modules make sense of
+                                the collected data, enabling the device to perform tasks such as data filtering,
+                                aggregation, and decision-making.</li>
+                            <li><strong> </strong></li>
+                        </ul>
+                    </div>
+                    <div class="definition"><strong> Examples of IoT Devices</strong></div>
+                    <div class="list n-list">
+                        <ul>
+                            <li>A wireless-enabled wearable device that measures data about a person, such as the number
+                                of steps walked, and sends the data to a cloud-based service.</li>
+                            <li>A smart thermostat that adjusts the temperature based on sensed ambient conditions and
+                                receives commands from a remote application.</li>
+                            <li>A Raspberry Pi-based device with sensors and actuators, capable of controlling and
+                                monitoring physical entities in its vicinity.</li>
+                        </ul>
+                    </div>
+                    <div class="definition"><strong>Raspberry Pi as an IoT Device: </strong> <br> Raspberry Pi, a
+                        low-cost mini-computer, can be used as an IoT device due to its Linux-based operating system and
+                        support for Python programming. Its GPIO pins provide capability for attaching sensors and
+                        actuators, making it a popular platform for IoT projects.</div>
+
+                    <h2>4.5 IoT Device</h2>
+                    <div class="definition">An IoT device is a hardware component that connects wirelessly to the
+                        internet or a local network hub, enabling remote monitoring, control, and communication with
+                        other devices. These devices are embedded with sensors, processing ability, software, and other
+                        technologies that allow them to collect and exchange data with other devices and systems over
+                        the internet or other communication networks.</div>
+                    <h3>Characteristics</h3>
+                    <div class="list">
+                        <ul>
+                            <li>Embedded with sensors, processing ability, and software</li>
+                            <li>Connects wirelessly to the internet or a local network hub</li>
+                            <li>Enables remote monitoring and control</li>
+                            <li>Can communicate and interact with other devices and systems</li>
+                            <li>Typically integrated into other tools, such as mobile devices, industrial equipment, and
+                                medical devices</li>
+                        </ul>
+                    </div>
+                    <div class="definition"><strong>Examples</strong><br>Smart home devices, Industrial devices,
+                        Consumer devices, Enterprise devices</div>
+
+                    <h2>4.6 Building Blocks</h2>
+                    <div class="definition">The building blocks of Raspberry Pi can be summarized as follows:</div>
+                    <div class="list">
+                        <ul>
+                            <li> <strong>ARM CPU/GPU: </strong>A Broadcom BCM2835 System on a Chip (SoC) featuring an
+                                ARM central processing unit (CPU) and a Videocore 4 graphics processing unit (GPU).</li>
+                            <li> <strong>SD card slot: </strong>A full-sized SD card slot for booting the device with an
+                                operating system (OS) installed.</li>
+                            <li> <strong>FPGA (Field-Programmable Gate Array): </strong>A customizable logic block that
+                                can be used to solve computable issues, allowing for flexibility and reconfigurability.
+                            </li>
+                            <li> <strong>HDMI: </strong>A High Definition Multimedia Interface for transmitting video or
+                                digital audio data to a computer monitor or digital TV.</li>
+                            <li> <strong>GPIO (General-Purpose Input/Output): </strong>A set of digital inputs and
+                                outputs that can be used to interact with external electronics, programmable using the
+                                GPIO Zero Python library.</li>
+                        </ul>
+                    </div>
+                    <div class="definition">These components work together to form the foundation of the Raspberry Pi,
+                        enabling its functionality as a small single-board computer (SBC) capable of running a variety
+                        of operating systems and applications.</div>
+
+                    <h2> 4.7 Raspberry Pi -Board</h2>
+                    <div class="definition">Visit <a href="https://opensource.com/resources/raspberry-pi ">Raspberry
+                            Pi</a> page. </div>
+
+                    <h2>4.8 Linux on Raspberry Pi</h2>
+                    <div class="definition">The Raspberry Pi, a small and affordable single-board computer, can run a
+                        variety of Linux distributions. Here are some key points to consider:</div>
+                    <div class="definition"><strong>Supported Devices</strong> <br>Raspberry Pi 4, 5, and other models
+                        are supported by various Linux distributions, including Ubuntu, Ubuntu Core, and others.</div>
+                    <div class="definition"><strong>Power Supply</strong></div>
+                    <div class="list n-list">
+                        <ul>
+                            <li><i>Recommended power supply: </i>5V/5A </li>
+                            <li><i>Raspberry Pi power supply: </i>27W USB-C power supply </li>
+                        </ul>
+                    </div>
+                    <div class="definition"><strong> Installing Linux</strong></div>
+                    <div class="list n-list">
+                        <ul>
+                            <li>Use Raspberry Pi Imager to download and write images to microSD cards</li>
+                            <li>Select an OS from the Imager's menu, including Ubuntu and other distributions</li>
+                            <li>Boot the system, select language, provide username and password, and continue with
+                                installation</li>
+                        </ul>
+                    </div>
+                    <div class="definition">Popular Linux Distributions for Raspberry Pi</div>
+                    <div class="list n-list">
+                        <ul>
+                            <li><strong>Ubuntu: </strong>Offers a user-friendly desktop environment and extensive
+                                software repositories</li>
+                            <li><strong>Ubuntu Core: </strong>An immutable, strictly confined operating system designed
+                                for IoT use-cases with a focus on security and simplified maintenance</li>
+                            <li><strong>Kali Linux: </strong>A popular Linux distribution for penetration testing and
+                                digital forensics</li>
+                        </ul>
+                    </div>
+
+                    <h2>4.9 Raspberry Pi Interfaces</h2>
+                    <div class="definition"> The Raspberry Pi offers various interfaces for connecting peripherals,
+                        sensors, and displays. Here's a summary of the interfaces mentioned:</div>
+                    <div class="list">
+                        <ul>
+                            <li><strong>GPIO (General Purpose Input/Output): </strong>The Raspberry Pi's GPIO pins allow
+                                for digital input/output operations with external devices. examples: GPIO for
+                                controlling LEDs, reading button presses, and interacting with sensors.</li>
+                            <li><strong>SPI (Serial Peripheral Interface): </strong>The Raspberry Pi has five pins for
+                                SPI communication, which enables synchronous serial data transfer with peripheral
+                                devices.</li>
+                            <li><strong>I2C (Inter-Integrated Circuit): </strong>The I2C interface on the Raspberry Pi
+                                allows for synchronous data transfer with hardware modules using only two pins: SDA
+                                (data line) and SCL (clock line).</li>
+                            <li><strong>Serial Interface: </strong>The Raspberry Pi's serial interface has receive (Rx)
+                                and transmit (Tx) pins for communication with serial peripherals.</li>
+                            <li><strong>HDMI: </strong>The Raspberry Pi uses an HDMI connection for video feed, allowing
+                                you to connect a monitor directly.</li>
+                            <li><strong>USB: </strong>The Raspberry Pi has USB ports for attaching network interface
+                                devices, such as Ethernet or Wi-Fi adapters, as well as other peripherals like keyboards
+                                and mice.</li>
+                            <li><strong>Bluetooth: </strong>The Raspberry Pi supports Bluetooth connectivity, which uses
+                                MAC addresses to identify stations and does not rely on IP addresses.</li>
+                        </ul>
+                    </div>
+
+                    <h2>4.10 Programming Raspberry Pi with Python</h2>
+                    <div class="definition">
+                        <div class="question">1# Blink an LED connected to GPIO pin 18. </div>
+                        <div class="answer">Wiring: Connect an LED to GPIO pin 18 with a resistor to limit current, and
+                            connect the other end to the ground (GND).</div>
+
+                        Python Code:
+                        <pre class="code">
+                            <span class="keyword">import </span>RPi.GPIO <span class="string">as </span>GPIO
+                            <span class="keyword">import </span>time
+                            <span class="comment"># Set up GPIO</span>
+                            GPIO.<span class="keyword">setmode</span>(GPIO.BCM)  <sapn class="comment"># Use Broadcom pin-numbering</sapn>
+                            GPIO.<span class="keyword">setup</span>(<span class="number">18</span>, GPIO.OUT)  <span class="comment"># Set GPIO 18 as an output pin</span>
+                             <span class="keyword">try</span>:
+                                 <span class="keyword">while True</span>:
+                                    GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.HIGH)   <span class="comment"># Turn on LED</span>
+                                    time.<span class="keyword">sleep</span>(<span class="number">1</span>)    <span class="comment"># Wait 1 second</span>
+                                    GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.LOW)   <span class="comment"># Turn off LED</span>
+                                    time.<span class="keyword">sleep</span>(<span class="number">1</span>)     <span class="comment"># Wait 1 second</span>
+                             <span class="keyword">except</span> KeyboardInterrupt:
+                                 <span class="keyword">pass</span> 	<span class="comment"># Exit loop when CTRL+C is pressed</span>
+                             <span class="keyword">finally</span>:
+                                GPIO.<span class="keyword">cleanup</span>()	  <span class="comment"># Reset GPIO settings</span>
+                        </pre>
                     </div>
                 </div>
             </div>

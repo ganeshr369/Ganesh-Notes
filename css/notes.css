@@ -11,7 +11,7 @@
 .notes-container {
     display: flex;
     background: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
 
 .main-container h1 {
     font-size: 40px;
-    color:  #34495e;
+    color: #34495e;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -90,17 +90,17 @@
     font-size: 16px;
 }
 
-.main-container .w-list  {
+.main-container .w-list {
     border-left: 4px solid #6a92b4;
     background-color: #ecf0f1;
 }
 
-.main-container .r-list  {
+.main-container .r-list {
     border-left: 4px solid #ff4c4c;
     background-color: #fff5f5;
 }
 
-.main-container .n-list  {
+.main-container .n-list {
     margin-top: -15px;
     border-left: none;
     background-color: #f7f9fa;
@@ -117,7 +117,8 @@
     margin-bottom: 10px;
 }
 
-.unit ul, ol {
+.unit ul,
+ol {
     padding-left: 20px;
 }
 
@@ -133,14 +134,43 @@
     .main-container h1 {
         font-size: 30px;
     }
+
     .main-container h2 {
         font-size: 1.8em;
     }
+
     .main-container h3 {
         font-size: 1.5em;
     }
+
     .main-container h4 {
         font-size: 1.4em;
     }
-    
+}
+
+.code {
+    background-color: #282c34;
+    color: #61FDBA;
+    padding: 1em ;
+    border-radius: 5px;
+    font-family: 'Courier New';
+    white-space: pre;
+    overflow: auto;
+}
+
+.comment {
+    color: #6a9955;
+    font-style: italic;
+}
+
+.keyword {
+    color: #ff79c6;
+}
+
+.string {
+    color: #f1fa8c;
+}
+
+.number {
+    color: #bd93f9;
 }
