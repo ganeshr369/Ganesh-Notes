@@ -48,7 +48,6 @@
     padding: 10px;
     flex-grow: 1;
     background: #f7f9fa;
-    text-align: justify;
 }
 
 .main-container h1 {
@@ -150,6 +149,7 @@ ol {
     }
 }
 
+/* css for code  */
 .code {
     background-color: #282c34;
     color: #61FDBA;
@@ -176,4 +176,33 @@ ol {
 
 .number {
     color: #bd93f9;
+}
+
+/* css for image and img-name  */
+.img-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.img-sec img {
+    min-width: 85%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    margin-bottom: 10px;
+}
+
+.img-sec .img-name {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    text-align: center;
+    font-style: italic;
 }
