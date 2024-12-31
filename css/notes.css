@@ -48,6 +48,7 @@
     padding: 10px;
     flex-grow: 1;
     background: #f7f9fa;
+    text-align: justify;
 }
 
 .main-container h1 {
@@ -128,6 +129,7 @@ ol {
 
 .unit {
     margin-bottom: 60px;
+    padding-right: 20px;
 }
 
 @media (max-width: 768px) {
@@ -155,6 +157,7 @@ ol {
     border-radius: 5px;
     font-family: 'Courier New';
     white-space: pre;
+    text-wrap-mode: wrap;
     overflow: auto;
 }
 
