@@ -1685,23 +1685,23 @@
                         connect the other end to the ground (GND).</div>
 
                     Python Code:
-                    <pre class="code">
-                        <span class="keyword">import </span>RPi.GPIO <span class="string">as </span>GPIO
-                        <span class="keyword">import </span>time
-                        <span class="comment"># Set up GPIO</span>
-                        GPIO.<span class="keyword">setmode</span>(GPIO.BCM)  <sapn class="comment"># Use Broadcom pin-numbering</sapn>
-                        GPIO.<span class="keyword">setup</span>(<span class="number">18</span>, GPIO.OUT)  <span class="comment"># Set GPIO 18 as an output pin</span>
-                            <span class="keyword">try</span>:
-                                <span class="keyword">while True</span>:
-                                GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.HIGH)   <span class="comment"># Turn on LED</span>
-                                time.<span class="keyword">sleep</span>(<span class="number">1</span>)    <span class="comment"># Wait 1 second</span>
-                                GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.LOW)   <span class="comment"># Turn off LED</span>
-                                time.<span class="keyword">sleep</span>(<span class="number">1</span>)     <span class="comment"># Wait 1 second</span>
-                            <span class="keyword">except</span> KeyboardInterrupt:
-                                <span class="keyword">pass</span> 	<span class="comment"># Exit loop when CTRL+C is pressed</span>
-                            <span class="keyword">finally</span>:
-                            GPIO.<span class="keyword">cleanup</span>()	  <span class="comment"># Reset GPIO settings</span>
-                    </pre>
+<pre class="code">
+    <span class="keyword">import </span>RPi.GPIO <span class="string">as </span>GPIO
+    <span class="keyword">import </span>time
+    <span class="comment"># Set up GPIO</span>
+    GPIO.<span class="keyword">setmode</span>(GPIO.BCM)  <sapn class="comment"># Use Broadcom pin-numbering</sapn>
+    GPIO.<span class="keyword">setup</span>(<span class="number">18</span>, GPIO.OUT)  <span class="comment"># Set GPIO 18 as an output pin</span>
+        <span class="keyword">try</span>:
+            <span class="keyword">while True</span>:
+            GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.HIGH)   <span class="comment"># Turn on LED</span>
+            time.<span class="keyword">sleep</span>(<span class="number">1</span>)    <span class="comment"># Wait 1 second</span>
+            GPIO.<span class="keyword">output</span>(<span class="number">18</span>, GPIO.LOW)   <span class="comment"># Turn off LED</span>
+            time.<span class="keyword">sleep</span>(<span class="number">1</span>)     <span class="comment"># Wait 1 second</span>
+        <span class="keyword">except</span> KeyboardInterrupt:
+            <span class="keyword">pass</span> 	<span class="comment"># Exit loop when CTRL+C is pressed</span>
+        <span class="keyword">finally</span>:
+        GPIO.<span class="keyword">cleanup</span>()	  <span class="comment"># Reset GPIO settings</span>
+</pre>
                     
                 </div>
             </div>
