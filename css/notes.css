@@ -192,7 +192,7 @@ ol {
 }
 
 .img-sec img {
-    min-width: 85%;
+    max-width: 85%;
     height: auto;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,.1);
@@ -205,4 +205,29 @@ ol {
     margin-top: 5px;
     text-align: center;
     font-style: italic;
+}
+
+/* table css */
+.tbl {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tbl-header {
+    background-color: #149c87;
+    padding: 10px;
+}
+
+.tbl-cell {
+    border: 1px solid #dddddd;
+    padding: 12px;
+}
+
+.tbl-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tbl-row:hover {
+    background-color: #f1f1f1;
 }
