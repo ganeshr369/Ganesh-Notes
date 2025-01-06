@@ -9,6 +9,7 @@
 }
 
 .notes-container {
+    margin-top: 74px;
     display: flex;
     background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -30,7 +31,7 @@
 }
 
 .links-to-unit li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .links-to-unit a {
@@ -178,6 +179,11 @@ ol {
     color: #bd93f9;
 }
 
+/* lead  */
+.lead {
+    color: #cbcaca;
+}
+
 /* css for image and img-name  */
 .img-sec {
     display: flex;
@@ -230,4 +236,17 @@ ol {
 
 .tbl-row:hover {
     background-color: #f1f1f1;
+}
+
+.youtube-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.youtube-video iframe {
+    width: 1200px;
+    height: 700px;
+    border-radius: 10px;
 }

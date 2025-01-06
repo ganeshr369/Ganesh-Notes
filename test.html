@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Navbar</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.content {
+    height: 2000px; /* Enough height to make the page scrollable */
+    padding-top: 60px; /* Keep content below the navbar */
+}
+    </style>
+</head>
+<body>
+
+    <div class="navbar" id="navbar">My Navbar</div>
+    <div class="content">
+        <!-- Content goes here to make the page scrollable -->
+        <h1>No More we are testing </h1>
+        <p>... (more content to enable scrolling) ...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+    </div>
+
+    <script>
+        let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll Down
+        navbar.style.transform = 'translateY(-100%)'; // Hide navbar
+    } else {
+        // Scroll Up
+        navbar.style.transform = 'translateY(0)'; // Show navbar
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+    </script>
+</body>
+</html>
